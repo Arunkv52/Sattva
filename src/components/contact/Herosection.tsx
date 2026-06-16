@@ -1,127 +1,187 @@
-import { useState, useEffect } from 'react'
-import { Clock, Video, Leaf } from 'lucide-react'
-import Navbar from '../Navbar'
-import Img1 from '../../assets/contact/img-1.jpg'
-import Img2 from '../../assets/contact/img-2.jpg'
-import Img3 from '../../assets/contact/img-3.jpg'
+import { useForm } from 'react-hook-form'
+import { ArrowRight } from 'lucide-react'
 
-
-
-const yogaImages = {
-  meditation:
-    Img1,
-  pose: Img2,
-  outdoor:
-    Img3
+type FormData = {
+  name: string
+  email: string
+  mobile: string
+  message: string
 }
 
+export default function HeroSection() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset
+  } = useForm<FormData>()
 
-
-export default function Herosection () {
-  const [loaded, setLoaded] = useState(false)
-
-  useEffect(() => {
-    const t = setTimeout(() => setLoaded(true), 100)
-    return () => clearTimeout(t)
-  }, [])
+  const onSubmit = (data: FormData) => {
+    console.log(data)
+    reset()
+  }
 
   return (
-    <>
-      <Navbar />
-      <section className='relative min-h-screen contact-bg overflow-hidden flex items-center'>
-        {/* Subtle background blobs */}
-        <div className='absolute top-[-80px] left-[-80px] w-72 h-72 rounded-full bg-[#D4E8D1]/40 blur-3xl pointer-events-none' />
-        <div className='absolute bottom-0 right-[35%] w-56 h-56 rounded-full bg-[#B7D5B4]/30 blur-2xl pointer-events-none' />
-
-        <div className='max-w-full mx-auto w-full px-6 md:px-12  py-25 grid lg:grid-cols-2 gap-12 items-center md:mt-20 mt-20'>
-          {/* ── LEFT COLUMN ── */}
-          <div
-            className={`flex flex-col gap-6 transition-all duration-700 ease-out ${
-              loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-            }`}
-          >
-            {/* Badge */}
-            <div className='inline-flex items-center gap-2 bg-white border border-[#C8DEC5] rounded-full px-4 py-1.5 w-fit shadow-sm '>
-              <Leaf size={14} className='text-[#4A7C59]' />
-              <span className='text-sm font-medium text-[#4A7C59] tracking-wide'>
-                Welcome to Sattva Holistics
-              </span>
+    <section className="bg-[#f6f6f4] py-50 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 md:px-10">
+        <div className="grid lg:grid-cols-2 gap-20">
+          {/* Left Side */}
+          <div className="relative">
+            {/* Background Logo */}
+            <div className="absolute left-0 top-20 opacity-10">
+              <div className="w-[350px] h-[180px] bg-[#d8d4e0] rounded-[80px]" />
             </div>
 
-            {/* Headline */}
-            <h1 className='text-[clamp(2.6rem,5.5vw,4rem)] font-bold leading-[1.1] text-white tracking-tight'>
-              Discover the Power of <br />
-              Healing, Balance <br />
-              <span className='text-white/50'>& Inner Transformation</span>
-            </h1>
+            <div className="relative z-10">
+              <h2 className="text-5xl md:text-5xl font-light text-[#8a8750]">
+                Contact Us
+              </h2>
 
-            {/* Description */}
-            <p className='text-white text-base md:text-lg leading-relaxed max-w-md'>
-              Reconnect with your natural energy through holistic healing
-              practices designed to nurture your mind, body, and spirit.
-              Experience greater clarity, emotional wellbeing, and lasting inner
-              peace.
-            </p>
-
-           
-           
+              <p className="mt-8 text-3xl md:text-2xl text-[#8a8750] font-light">
+                We'd{' '}
+                <span className="italic font-serif">
+                  love
+                </span>{' '}
+                to hear from you.
+              </p>
+            </div>
           </div>
 
-          {/* ── RIGHT COLUMN — Image Mosaic ── */}
-          <div
-            className={`relative h-[480px] md:h-[560px] transition-all duration-700 delay-200 ease-out hidden md:block ${
-              loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-            }`}
-          >
-            {/* Top-right large image */}
-            <div className='absolute top-0 right-0 w-[60%] h-[58%] rounded-3xl overflow-hidden shadow-xl'>
-              <img
-                src={yogaImages.meditation}
-                alt='Meditation outdoors'
-                className='w-full h-full object-cover hover:scale-105 transition-transform duration-700'
-              />
+          {/* Right Side */}
+          <div>
+            {/* Contact Info */}
+            <div className="grid md:grid-cols-3 gap-20 mb-20 text-[#8a8750]">
+              <div>
+                <p>admin@sattvaholistics.com</p>
+                <p>+91 99940 53595</p>
+              </div>
+
+              <div>
+                <p>102/17 Main Road</p>
+                <p>Coimbatore, Tamil Nadu</p>
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  className="block hover:underline"
+                >
+                  Instagram
+                </a>
+
+                <a
+                  href="#"
+                  className="block hover:underline"
+                >
+                  Facebook
+                </a>
+              </div>
             </div>
 
-            {/* Middle-left course card */}
-            <div className='absolute top-[30%] left-0 w-[54%] bg-white rounded-2xl shadow-xl overflow-hidden z-10 border border-[#E8F0E6]'>
-              <div className='h-36 overflow-hidden'>
-                <img
-                  src={yogaImages.pose}
-                  alt='Yoga for beginners'
-                  className='w-full h-full object-cover hover:scale-105 transition-transform duration-700'
-                />
-              </div>
-              <div className='px-4 py-3'>
-                <p className='font-semibold text-[#1C2B1E] text-sm'>
-                  Yoga For Beginners
-                </p>
-                <div className='flex items-center gap-4 mt-1.5 text-xs text-[#6B7D6E]'>
-                  <span className='flex items-center gap-1'>
-                    <Video size={13} className='text-[#4A7C59]' />6 Videos
-                  </span>
-                  <span className='flex items-center gap-1'>
-                    <Clock size={13} className='text-[#4A7C59]' />
-                    12 Hours
-                  </span>
+            {/* Form */}
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="space-y-10"
+            >
+              <div className="grid md:grid-cols-2 gap-10">
+                {/* Name */}
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    {...register('name', {
+                      required: 'Name is required'
+                    })}
+                    className="w-full bg-transparent border-b border-[#8a8750]/60 py-3 outline-none text-[#8a8750] placeholder:text-[#8a8750]/50"
+                  />
+
+                  {errors.name && (
+                    <p className="text-red-500 text-sm mt-2">
+                      {errors.name.message}
+                    </p>
+                  )}
+                </div>
+
+                {/* Email */}
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    {...register('email', {
+                      required: 'Email is required',
+                      pattern: {
+                        value:
+                          /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: 'Invalid email address'
+                      }
+                    })}
+                    className="w-full bg-transparent border-b border-[#8a8750]/60 py-3 outline-none text-[#8a8750] placeholder:text-[#8a8750]/50"
+                  />
+
+                  {errors.email && (
+                    <p className="text-red-500 text-sm mt-2">
+                      {errors.email.message}
+                    </p>
+                  )}
                 </div>
               </div>
-            </div>
 
-            {/* Bottom-right image */}
-            <div className='absolute bottom-0 right-[2%] w-[48%] h-[42%] rounded-3xl overflow-hidden shadow-xl border-4 border-[#F8F6F1]'>
-              <img
-                src={yogaImages.outdoor}
-                alt='Outdoor yoga session'
-                className='w-full h-full object-cover hover:scale-105 transition-transform duration-700'
-              />
-            </div>
+              {/* Mobile Number */}
+              <div>
+                <input
+                  type="tel"
+                  placeholder="Mobile Number"
+                  {...register('mobile', {
+                    required: 'Mobile number is required',
+                    pattern: {
+                      value: /^[0-9]{10}$/,
+                      message: 'Enter a valid mobile number'
+                    }
+                  })}
+                  className="w-full bg-transparent border-b border-[#8a8750]/60 py-3 outline-none text-[#8a8750] placeholder:text-[#8a8750]/50"
+                />
 
-            
+                {errors.mobile && (
+                  <p className="text-red-500 text-sm mt-2">
+                    {errors.mobile.message}
+                  </p>
+                )}
+              </div>
 
-            
+              {/* Message */}
+              <div>
+                <textarea
+                  rows={4}
+                  placeholder="Message"
+                  {...register('message', {
+                    required: 'Message is required'
+                  })}
+                  className="w-full bg-transparent border-b border-[#8a8750]/60 py-3 outline-none resize-none text-[#8a8750] placeholder:text-[#8a8750]/50"
+                />
+
+                {errors.message && (
+                  <p className="text-red-500 text-sm mt-2">
+                    {errors.message.message}
+                  </p>
+                )}
+              </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                className="group flex items-center gap-4 border border-[#8a8750] rounded-full px-8 py-4 text-[#8a8750] hover:bg-[#8a8750] hover:text-white transition-all duration-300"
+              >
+                Submit
+
+                <ArrowRight
+                  size={18}
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                />
+              </button>
+            </form>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   )
 }

@@ -1,13 +1,11 @@
-import FooterMenu from './data/FooterMenu'
 import Social from './data/SocialLinks'
 import Noise from './Noise'
-import Logo from '../assets/logo/logo.png'
-import { Link } from 'react-router'
+
 
 const Footer = () => {
   return (
     <>
-      <footer className='bg-[#f2f2f2] md:py-8 py-5 px-5'>
+      <footer className='bg-[#f2f2f2] md:py-8 py-5 px-15'>
         <Noise
           patternSize={160}
           patternScaleX={1.9}
@@ -15,27 +13,7 @@ const Footer = () => {
           patternRefreshInterval={2}
           patternAlpha={10}
         />
-        <div className='footer-top md:flex justify-between'>
-          <div className='md:w-1/2 w-full'>
-            <div className='md:py-0 py-3 md:flex md:justify-start flex justify-center  md:bg-transparent md:p-0'>
-              <img src={Logo} alt='' className='md:w-30 w-30' />
-            </div>
-          </div>
-          {/* Social Links section */}
-          <div className='md:w-1/2 w-full'>
-            <div>
-              {FooterMenu.map((item, index) => (
-                <Link
-                  key={index}
-                  to={item.link}
-                  className='block text-[#7a7346] md:text-2xl text-2xl border-b border-b-[#7a7346] font-semibold md:py-1 py-1 cursor-pointer'
-                >
-                  {item.title}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
+        
         <div className='footer-bottom md:flex justify-between items-start mt-15'>
           <div className='md:w-1/2 w-full'>
             <div className='md:w-[50%] w-full'>

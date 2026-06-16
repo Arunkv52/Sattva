@@ -8,12 +8,12 @@ const Footermenu = [
     link: '/about'
   },
   {
-    title: 'Upcoming Classes',
-    link: '/upcomingclass'
+    title: 'Classes',
+    link: '/classes'
   },
   {
-    title: 'Previous Classes',
-    link: '/previousclass'
+    title: 'Faqs',
+    link: '/faqs'
   },
   {
     title: 'Gallery',

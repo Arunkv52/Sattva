@@ -2,9 +2,9 @@ import { motion } from 'framer-motion'
 
 export default function Aboutsattva() {
   return (
-    <section className="relative bg-[#f5f5f3] overflow-hidden py-24 lg:py-36">
+    <section className="relative bg-[#f5f5f3] overflow-hidden py-24 md:py-56">
       {/* Background Shape */}
-      <div className="absolute left-16 top-0 opacity-20 pointer-events-none">
+      <div className="absolute left-16 top-30 opacity-20 pointer-events-none">
         <svg
           width="400"
           height="340"
@@ -19,7 +19,7 @@ export default function Aboutsattva() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="grid lg:grid-cols-2 gap-20 items-start md:sticky top-5">
+        <div className="grid lg:grid-cols-2 gap-20 items-start ">
           {/* Left Side */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -28,11 +28,11 @@ export default function Aboutsattva() {
             viewport={{ once: true }}
             className="relative"
           >
-            <h2 className="text-[#7E7A34] font-light leading-none">
+            <h2 className="text-[#7E7A34] font-light leading-none ">
               <span className="block text-5xl md:text-6xl lg:text-7xl">
                 Welcome to{' '}
                 <span className="italic font-serif">
-                  Alma.
+                  Sattva Holistics.
                 </span>
               </span>
             </h2>

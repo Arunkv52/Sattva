@@ -1,16 +1,15 @@
-import Herosection from "../contact/Herosection"
+import HeroSection from "../events/Herosection"
 import Footer from "../Footer"
 import Navbar from "../Navbar"
 
-const Contact = () => {
+const Events = () => {
   return (
     <>
-
         <Navbar />
-        <Herosection />
+        <HeroSection />
         <Footer />
     </>
   )
 }
 
-export default Contact
+export default Events

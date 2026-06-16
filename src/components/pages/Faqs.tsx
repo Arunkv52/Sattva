@@ -1,16 +1,15 @@
-import Herosection from "../contact/Herosection"
 import Footer from "../Footer"
 import Navbar from "../Navbar"
+import HeroSection from "../faqs/HeroSection"
 
-const Contact = () => {
+const Faqs = () => {
   return (
     <>
-
         <Navbar />
-        <Herosection />
+        <HeroSection />
         <Footer />
     </>
   )
 }
 
-export default Contact
+export default Faqs

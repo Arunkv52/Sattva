@@ -6,7 +6,7 @@ const Founder = () => {
         <div className='grid lg:grid-cols-2 items-start gap-12'>
           {/* Left Content */}
           <div className='md:sticky top-5'>
-            <h1 className='text-7xl md:text-4xl text-[#2D2A26] leading-none'>
+            <h1 className='text-7xl md:text-4xl text-[var(--text-color)] leading-none'>
               Meet the <span className='italic'>Founder</span>
             </h1>
 
@@ -25,24 +25,34 @@ const Founder = () => {
               thrive on every level of their being.
             </p>
 
-            <p className='py-9 font-bold'>Meet Danielle, the Founder of Alma.</p>
+            <p className='py-9 font-bold text-[var(--text-color)]'>
+              Shalini, the Founder of Sattva Holistics.
+            </p>
           </div>
 
           {/* Right Image */}
           <div className='relative flex justify-center'>
             {/* Main Image Card */}
             <div className='relative'>
-              <img
-                src={FounderImg}
-                alt='Instructor'
-                className='w-full h-[250px] object-contain'
-              />
-              <p className='italic py-8'>
-                ‘Your spine is the very core of you. It’s what your limbs
-                connect into, what keeps you upright. It goes beyond the
-                physical – it’s the energy centre of your personal world’
+              <div className='md:flex justify-start items-center gap-5'>
+                <img
+                  src={FounderImg}
+                  alt='Instructor'
+                  className='w-full h-[250px] object-contain'
+                />
+                <p className='italic py-8'>
+                  ‘Your spine is the very core of you. It’s what your limbs
+                  connect into, what keeps you upright. It goes beyond the
+                  physical – it’s the energy centre of your personal world’
+                </p>
+              </div>
+
+              <p className='py-5 italic text-[#7E7A34]'>
+                For pre-teen Danielle, life in Los Angeles was defined by
+                movement. In her fast-paced, physical world – dance, ballet and
+                cheerleading reigned supreme.
               </p>
-              <p>
+              <p className='py-2'>
                 For pre-teen Danielle, life in Los Angeles was defined by
                 movement. In her fast-paced, physical world – dance, ballet and
                 cheerleading reigned supreme. So, when faced with a
@@ -51,7 +61,7 @@ const Founder = () => {
                 balance. It was tough, but our girl was no quitter – and at
                 university, she finally found what she was looking for.
               </p>
-               <p>
+              <p className='py-2'>
                 For pre-teen Danielle, life in Los Angeles was defined by
                 movement. In her fast-paced, physical world – dance, ballet and
                 cheerleading reigned supreme. So, when faced with a
@@ -60,16 +70,7 @@ const Founder = () => {
                 balance. It was tough, but our girl was no quitter – and at
                 university, she finally found what she was looking for.
               </p>
-               <p>
-                For pre-teen Danielle, life in Los Angeles was defined by
-                movement. In her fast-paced, physical world – dance, ballet and
-                cheerleading reigned supreme. So, when faced with a
-                life-changing scoliosis diagnosis at the age of 10, Danielle had
-                to dig deep. To find a way to move, without upsetting the
-                balance. It was tough, but our girl was no quitter – and at
-                university, she finally found what she was looking for.
-              </p>
-               <p>
+              <p className='py-2'>
                 For pre-teen Danielle, life in Los Angeles was defined by
                 movement. In her fast-paced, physical world – dance, ballet and
                 cheerleading reigned supreme. So, when faced with a

@@ -1,12 +1,10 @@
 import About from '@/components/pages/About'
 import Home from '@/components/pages/Home'
 import { BrowserRouter, Routes, Route } from 'react-router'
-import EnergyBalancing from '../components/pages/EnergyBalancing'
-import Upcomeclass from '@/components/pages/Upcomeclass'
-import Previousclass from '@/components/pages/Previousclass'
-import Gallery from '@/components/pages/Gallery'
 import Contactpage from '@/components/pages/Contact'
-import Reikihealing from '@/components/pages/Reikihealing'
+import FAQ from '@/components/pages/Faqs'
+import Events from '@/components/pages/Events'
+import Classes from '@/components/pages/Classes'
 
 const Router = () => {
   return (
@@ -15,12 +13,10 @@ const Router = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/energybalancing' element={<EnergyBalancing />} />
-          <Route path='/reikihealing' element={<Reikihealing/>}/>
-          <Route path='/upcomingclass' element={<Upcomeclass />} />
-          <Route path='/previousclass' element={<Previousclass />} />
-          <Route path='/gallery' element={<Gallery />} />
           <Route path='/contact' element={<Contactpage />}/>
+          <Route path='/faqs' element={<FAQ/>} />
+          <Route path='/events' element={<Events/>} />
+          <Route path='/classes' element={<Classes />}/>
         </Routes>
       </BrowserRouter>
     </>
