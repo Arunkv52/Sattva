@@ -35,7 +35,7 @@ const cards: CardProps[] = [
 export default function HouseCards() {
   return (
     <section className="bg-[#f5f5f3] py-20">
-      <div className="mx-auto px-10">
+      <div className="mx-auto md:px-10 px-5">
         <div className="grid lg:grid-cols-3 gap-8">
           {cards.map((card, index) => (
             <motion.div

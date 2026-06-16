@@ -2,7 +2,7 @@ import FounderImg from '../../assets/about/founder.jpg'
 const Founder = () => {
   return (
     <>
-      <div className='container mx-auto md:px-50 px-10 md:py-30 py-20'>
+      <div className='container mx-auto md:px-50 px-5 md:py-30 py-20'>
         <div className='grid lg:grid-cols-2 items-start gap-12'>
           {/* Left Content */}
           <div className='md:sticky top-5'>

@@ -47,7 +47,7 @@ export default function FAQ() {
   }
 
   return (
-    <section className="bg-[#f5f5f3] py-50">
+    <section className="bg-[#f5f5f3] md:py-50 py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-20 items-start">
           {/* Left Side */}
@@ -67,18 +67,18 @@ export default function FAQ() {
             </div>
 
             <div className="relative z-10 text-center lg:text-left">
-              <p className="text-[70px] md:text-5xl font-light text-[#8B8750] leading-none">
+              <p className="text-6xl md:text-5xl font-light text-[#8B8750] leading-none">
                 FAQ
               </p>
 
-              <p className="mt-4 text-3xl md:text-lg text-[#8B8750] font-light">
+              <p className="mt-4 text-2xl md:text-lg text-[#8B8750] font-light">
                 Sattva Holistics. Come in.
               </p>
             </div>
           </div>
 
           {/* Right Side */}
-          <div>
+          <div className='md:py-0 py-20'>
             {faqs.map((faq, index) => (
               <div
                 key={index}

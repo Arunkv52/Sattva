@@ -36,7 +36,7 @@ const classes = [
 export default function Herosection() {
   return (
     <section className="bg-[#f4f3ef] py-50">
-      <div className=" mx-auto px-30">
+      <div className=" mx-auto md:px-30 px-5">
 
         <div className="grid lg:grid-cols-[420px_1fr] gap-16">
 
