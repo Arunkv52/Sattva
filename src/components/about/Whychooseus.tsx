@@ -5,27 +5,9 @@
 //   FaPersonWalking,
 // } from 'react-icons/fa6'
 
-import HeroBg from '../../assets/home/premium-images/yoga-bg-2.jpg'
 
 const Whychooseus = () => {
-  const features = [
-    {
-      title: 'Personalized Healing Experiences',
-      desc: 'Every individual is unique. Our sessions are thoughtfully tailored to address your specific emotional, energetic, and wellness needs.'
-    },
-    {
-      title: 'Learn Anytime, Anywhere',
-      desc: 'Access guided wellness practices, meditation sessions, and healing techniques from the comfort of your home.'
-    },
-    {
-      title: 'Experienced Wellness Practitioners',
-      desc: 'Receive guidance from compassionate practitioners dedicated to helping you achieve balance, clarity, and personal transformation.'
-    },
-    {
-      title: 'Growth That Fits Your Lifestyle',
-      desc: 'Flexible classes and healing programs designed to integrate seamlessly into your daily routine and wellness journey.'
-    }
-  ]
+
 
   return (
     <section className='relative overflow-hidden'>

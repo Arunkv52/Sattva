@@ -4,7 +4,6 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-import { FaCartShopping } from "react-icons/fa6";
 import HeaderVideo from "../assets/video/4577799_Forest_Sunrise_3840x2160.mp4";
 import Navbar from "./Navbar";
 
