@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+:root {
+  --primary-color: #21949e;
+  --secondary-color : #e8ed5f;
+  --shapes-color: #4c3a31;
+  --light:#ffffff;
+  --dark : #010506;
+  --others: #cb954d;
+;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #F7F5F0;
+    --sb-track-color: #ffffff;
+  --sb-thumb-color: #7b7f35;
+  --sb-size: 4px;
+}
+
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+
+
+header{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100dvh;
+
+}
+footer{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  
+}
+.prod-scroll-bg{
+   background: url(./assets/home/premium-images/image-9.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.benefits{
+background: 
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(5, 9, 36, 0.4)),
+  url('/src/assets/home/premium-images/yoga-bg-2.jpg');
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100dvh;
+  border-radius: 20px;
+}
+
+.about-us-hero{
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(5, 9, 36, 0.4)),
+  url('/src/assets/home/premium-images/yoga-bg-2.jpg');
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100dvh;
+  border-radius: 20px;
+}
+
+.yoga-hero-sec{
+    background: 
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(5, 9, 36, 0.4)),
+  url('/src/assets/home/yoga-cls.jpg');
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100dvh;
+  border-radius: 20px;
+}
+.contact-bg{
+    background: 
+  linear-gradient(rgba(0, 0, 0, 0.77), rgba(5, 9, 36, 0.4)),
+  url('/src/assets/home/premium-images/bg-empty.jpg');
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100dvh;
+  border-radius: 20px;
+}
+
+.reiki-bg{
+     background: 
+  linear-gradient(rgba(0, 0, 0, 0.77), rgba(5, 9, 36, 0.4)),
+  url('/src/assets/reiki-class/hero-bg.jpg');
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100dvh;
+}
