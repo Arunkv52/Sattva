@@ -11,18 +11,22 @@ const Founder = () => {
             </h1>
 
             <p className='mt-8 text-gray-600 leading-relaxed max-w-lg'>
-              Sattva Holistics was founded with a deep passion for helping
-              people reconnect with their authentic selves and unlock their
-              natural healing potential. Through years of learning, practice,
-              and dedication to holistic wellness, our founder has developed a
-              heart-centered approach that combines traditional healing wisdom
-              with modern wellbeing techniques.
+              Sattva Holistics was founded with a vision to create a nurturing
+              environment where healing feels natural and accessible.
             </p>
 
             <p className='mt-4 text-gray-600 leading-relaxed max-w-lg'>
-              The vision behind Sattva Holistics is simple: to provide a safe,
-              supportive environment where individuals can heal, grow, and
-              thrive on every level of their being.
+              Driven by a passion for holistic wellbeing and mindful living, our
+              founder combines movement, awareness, and restorative practices to
+              support individuals on their personal wellness journey.
+            </p>
+            <p className='mt-4 text-gray-600 leading-relaxed max-w-lg'>
+              Every session is designed with care—encouraging balance,
+              self-discovery, and sustainable growth.{' '}
+            </p>
+            <p className='mt-4 text-gray-600 leading-relaxed max-w-lg'>
+              At Sattva Holistics, wellness is not a destination; it is a way of
+              living.{' '}
             </p>
 
             <p className='py-9 font-bold text-[var(--text-color)]'>
@@ -41,43 +45,21 @@ const Founder = () => {
                   className='w-full h-[250px] object-contain'
                 />
                 <p className='italic py-8'>
-                  ‘Your spine is the very core of you. It’s what your limbs
-                  connect into, what keeps you upright. It goes beyond the
-                  physical – it’s the energy centre of your personal world’
+                  "Your body holds wisdom. When you create space to listen, healing begins naturally."
                 </p>
               </div>
 
               <p className='py-5 italic text-[#7E7A34]'>
-                For pre-teen Danielle, life in Los Angeles was defined by
-                movement. In her fast-paced, physical world – dance, ballet and
-                cheerleading reigned supreme.
+                For years, our approach has centered around helping people reconnect with themselves through intentional movement and mindful practices.
               </p>
               <p className='py-2'>
-                For pre-teen Danielle, life in Los Angeles was defined by
-                movement. In her fast-paced, physical world – dance, ballet and
-                cheerleading reigned supreme. So, when faced with a
-                life-changing scoliosis diagnosis at the age of 10, Danielle had
-                to dig deep. To find a way to move, without upsetting the
-                balance. It was tough, but our girl was no quitter – and at
-                university, she finally found what she was looking for.
+               We believe wellness is personal. Every individual enters with different goals whether to reduce stress, build strength, find emotional balance, or simply create moments of calm.
               </p>
               <p className='py-2'>
-                For pre-teen Danielle, life in Los Angeles was defined by
-                movement. In her fast-paced, physical world – dance, ballet and
-                cheerleading reigned supreme. So, when faced with a
-                life-changing scoliosis diagnosis at the age of 10, Danielle had
-                to dig deep. To find a way to move, without upsetting the
-                balance. It was tough, but our girl was no quitter – and at
-                university, she finally found what she was looking for.
+                Our programs combine guidance, compassion, and practical techniques to support long-term wellbeing and inner transformation.
               </p>
               <p className='py-2'>
-                For pre-teen Danielle, life in Los Angeles was defined by
-                movement. In her fast-paced, physical world – dance, ballet and
-                cheerleading reigned supreme. So, when faced with a
-                life-changing scoliosis diagnosis at the age of 10, Danielle had
-                to dig deep. To find a way to move, without upsetting the
-                balance. It was tough, but our girl was no quitter – and at
-                university, she finally found what she was looking for.
+                At Sattva Holistics, every step forward is celebrated.
               </p>
             </div>
           </div>

@@ -1,44 +1,30 @@
 import { FaFacebookF, FaInstagram, FaArrowRight } from 'react-icons/fa'
-
-import HeaderVideo from '../assets/video/4577799_Forest_Sunrise_3840x2160.mp4'
+import HeaderImage from '../assets/home/bg-main.jpg'
 import Navbar from './Navbar'
+import { Link } from 'react-router'
 
 const HeroSection = () => {
   return (
     <section className='relative h-screen overflow-hidden'>
       <Navbar />
 
-      {/* Background Video */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload='auto'
+      {/* Background Image */}
+      <img
+        src={HeaderImage}
+        alt='Background'
         className='absolute inset-0 w-full h-full object-cover'
-      >
-        <source src={HeaderVideo} type='video/mp4' />
-      </video>
+      />
 
       {/* Softer Gradient */}
-      <div
-        className='
-          absolute inset-0
-          bg-gradient-to-r
-          from-[#79834f]/35
-          via-[#79834f]/15
-          to-[#5e6840]/40
-        '
-      />
 
       {/* Light Blur */}
       <div className='absolute inset-0 backdrop-blur-[1px]' />
 
       <div className='relative z-20 h-full'>
         {/* Center Title */}
-        <div className='absolute md:top-[22%] top-60 left-1/2 -translate-x-1/2'>
+        <div className='absolute md:top-[22%] top-50 left-1/2 -translate-x-1/2'>
           <h1
-            className='text-[90px] md:text-[150px] font-serif tracking-[10px] text-white'
+            className='text-[100px] md:text-[150px] font-serif tracking-[10px] text-white'
             style={{
               WebkitTextStroke: '2px #ec4899' // Tailwind pink-500
             }}
@@ -48,24 +34,29 @@ const HeroSection = () => {
         </div>
 
         {/* Bottom Content */}
-        <div className='absolute md:bottom-5 bottom-50 left-5 md:left-8'>
-          <h2 className='text-white text-5xl md:text-6xl'>Restore Balance.</h2>
+        <div className='absolute md:bottom-5 bottom-40 left-5 md:left-8'>
+          <h2 className='text-[#7a7346] text-5xl md:text-6xl'>
+            Restore Balance.
+          </h2>
 
-          <p className='mt-4 text-white text-2xl md:text-5xl'>
+          <p className='mt-4 text-[#7a7346] text-2xl md:text-5xl'>
             Awaken Your
             <span className='italic'> Inner Energy.</span>
           </p>
 
           <div className='mt-10 flex flex-wrap gap-5'>
-            <button className='flex items-center gap-4 rounded-full border border-white px-8 py-4 text-white'>
-              Book Now
-              <FaArrowRight />
-            </button>
-
-            <button className='flex items-center gap-4 rounded-full bg-white/90 px-8 py-4 text-[#667145]'>
-              Know about us
-              <FaArrowRight />
-            </button>
+            <a href='https://calendar.app.google/Qx6jKM7bxUobEgBf8'>
+              <button className='flex items-center gap-4 rounded-full border border-black px-8 py-4 text-[#7a7346] cursor-pointer'>
+                Book Slot
+                <FaArrowRight />
+              </button>
+            </a>
+            <Link to={'/about'}>
+              <button className='flex items-center gap-4 rounded-full bg-[#93cfdb] px-8 py-4 text-[#667145] cursor-pointer'>
+                Know more
+                <FaArrowRight />
+              </button>
+            </Link>
           </div>
         </div>
 

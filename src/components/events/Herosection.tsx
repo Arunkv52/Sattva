@@ -1,4 +1,4 @@
-import EventImage from '../../assets/home/teach.webp'
+import EventImage from '../../assets/events/events-image.jpg'
 
 export default function HeroSection() {
   return (

@@ -12,11 +12,7 @@ const Navbar = () => {
       <div className='mx-auto flex items-center justify-between'>
         {/* Logo */}
         <Link to='/'>
-          <img
-            src={Logo}
-            alt='Logo'
-            className='w-20 object-contain'
-          />
+          <img src={Logo} alt='Logo' className='w-20 object-contain' />
         </Link>
 
         {/* Desktop Menu */}
@@ -34,9 +30,11 @@ const Navbar = () => {
 
         {/* Desktop Button */}
         <div className='hidden md:block'>
-          <button className='bg-white text-[#8a8750] text-sm px-5 py-2 rounded-lg shadow-md hover:scale-105 transition-all duration-300'>
-            Register Now
-          </button>
+          <a href='https://payment.sattvaholistics.com/'>
+            <button className='cursor-pointer bg-white text-[#8a8750] text-sm px-5 py-2 rounded-lg shadow-md hover:scale-105 transition-all duration-300'>
+              Register Now
+            </button>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}

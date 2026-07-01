@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
-import Image1 from '../../assets/about/mission.jpg'
+import Image1 from '../../assets/about/vision.jpg'
+import Image2 from '../../assets/about/girl.jpg'
+import Image3 from '../../assets/about/peaceful.jpg'
 
 interface CardProps {
   image: string
@@ -14,21 +16,21 @@ const cards: CardProps[] = [
     title: 'House of',
     subtitle: 'Connection',
     description:
-      'The House of deep-lasting body-mind-soul enriching connection.'
+      'Create meaningful moments through mindful movement, healing practices, and a supportive community that nurtures body, mind, and soul.'
   },
   {
-    image: Image1,
+    image: Image2,
     title: 'House of',
     subtitle: 'Movement',
     description:
-      'Explore movement through yoga, pilates and mindful practice.'
+      'Explore yoga and wellness practices designed to improve flexibility, balance, energy, and overall wellbeing—at your own pace.'
   },
   {
-    image: Image1,
+    image: Image3,
     title: 'House of',
     subtitle: 'Mindfulness',
     description:
-      'Reconnect with yourself through meditation and stillness.'
+      'Cultivate awareness through breath, meditation, and intentional living to bring calm, clarity, and inner balance.'
   }
 ]
 

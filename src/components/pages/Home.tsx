@@ -4,6 +4,7 @@ import OfferingsSection from '../home/OfferingsSection'
 import WelcomeSection from '../home/WelcomeSection'
 import About from '../home/About'
 
+
 const Home = () => {
   return (
     <>
@@ -34,3 +35,6 @@ const Home = () => {
 }
 
 export default Home
+
+
+

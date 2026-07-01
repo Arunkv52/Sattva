@@ -1,16 +1,16 @@
 import { useState } from "react";
 
-import Space1 from "../../assets/home/premium-images/image-1.jpg";
-import Space2 from "../../assets/home/premium-images/image-2.jpg";
-import Space3 from "../../assets/home/premium-images/image-3.jpg";
+import Space1 from "../../assets/home/online-cls.jpg";
+import Space2 from "../../assets/home/healing-theraphy-cls.jpg";
+import Space3 from "../../assets/home/yoga-studio.jpg";
 
 const spaces = [
   {
-    title: "Class Room / Chill Zone",
+    title: "Online Class",
     image: Space1,
   },
   {
-    title: "Healing",
+    title: "Healing Theraphy Clases",
     image: Space2,
   },
   {
@@ -30,7 +30,7 @@ const WelcomeSection = () => {
         className="mb-12 text-5xl md:text-5xl
         text-[#7b7f35] font-light"
       >
-        Choose your <span className="italic">Course!
+       Choose Your <span className="italic">Course!
         </span>
       </h2>
 
@@ -69,11 +69,7 @@ const WelcomeSection = () => {
             leading-6
             text-[#7b7f35]"
           >
-            A space built to inspire.
-            Find calm and connection
-            through our welcoming
-            atmosphere and mindful
-            experience.
+           A peaceful environment designed to help you slow down, breathe deeply, and reconnect.
           </p>
 
           <div className="border-t border-[#7b7f35]/40">
