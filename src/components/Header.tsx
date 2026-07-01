@@ -47,7 +47,7 @@ const HeroSection = () => {
           <div className='mt-10 flex flex-wrap gap-5'>
             <a href='https://calendar.app.google/Qx6jKM7bxUobEgBf8'>
               <button className='flex items-center gap-4 rounded-full border border-black px-8 py-4 text-[#7a7346] cursor-pointer'>
-                Book Slot
+                Book Your Slots
                 <FaArrowRight />
               </button>
             </a>
