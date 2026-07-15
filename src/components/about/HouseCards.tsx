@@ -13,24 +13,21 @@ interface CardProps {
 const cards: CardProps[] = [
   {
     image: Image1,
-    title: 'House of',
-    subtitle: 'Connection',
-    description:
-      'Create meaningful moments through mindful movement, healing practices, and a supportive community that nurtures body, mind, and soul.'
+    title: 'Reiki Healing',
+    subtitle: '',
+    description: 'Reconnect with your inner healing energy through the ancient practice of Reiki. Learn to restore physical, emotional, and spiritual balance with gentle, hands-on energy techniques.'
   },
   {
     image: Image2,
-    title: 'House of',
-    subtitle: 'Movement',
-    description:
-      'Explore yoga and wellness practices designed to improve flexibility, balance, energy, and overall wellbeing—at your own pace.'
+    title: 'Arc Angels',
+    subtitle: '',
+    description: 'Experience the loving guidance and divine protection of the Archangels. Learn powerful meditation and energy practices to invite clarity, healing, courage, and inner peace into your life.'
   },
   {
     image: Image3,
-    title: 'House of',
-    subtitle: 'Mindfulness',
-    description:
-      'Cultivate awareness through breath, meditation, and intentional living to bring calm, clarity, and inner balance.'
+    title: 'Shamanic Healing',
+    subtitle: '',
+    description: 'Explore ancient shamanic traditions that help release energetic blockages and reconnect with your true self. Discover sacred healing techniques that promote transformation, balance, and spiritual growth.'
   }
 ]
 

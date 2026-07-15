@@ -1,123 +1,242 @@
+import { useState, ComponentType } from 'react'
+
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle
+} from '@/components/ui/sheet'
+
 import EnergyBalance from '../../assets/classes/Energy-balancing.jpg'
 import ReikiHeal from '../../assets/classes/reiki-heal.jpg'
-import SoundTheraphy from '../../assets/classes/sound-theraphy.jpg'
-import EmotionalRelease from '../../assets/classes/emotional-release.jpg'
-import IntutionBoost from '../../assets/classes/intution-boost.jpg'
-import EnergyBlock from '../../assets/classes/energy-block.jpg'
 
+import  ReikiHealing  from './ReikiHealing'
 
+interface Course {
+  id: number
+  title: string
+  level: string
+  duration: string
+  desc: string
+  image: string
+  component?: ComponentType
+}
 
-
-
-const classes = [
+const classes: Course[] = [
   {
-    title: 'Energy Balancing',
-    level: 'Healing Session',
+    id: 1,
+    title: 'Usui Reiki',
+    level: 'Certified Course',
     duration: '',
-    desc: 'Restore harmony and support your natural energy flow through guided balancing techniques that promote calm and overall wellbeing.',
+    desc: 'Learn the traditional Japanese healing technique that channels universal life energy for self-healing, emotional balance, and spiritual growth.',
+    image: ReikiHeal,
+    component: ReikiHealing
+  },
+
+  {
+    id: 2,
+    title: 'Crystal Therapy',
+    level: 'Healing Course',
+    duration: '',
+    desc: 'Discover the healing properties of crystals to balance chakras, enhance wellbeing, and restore positive energy.',
     image: EnergyBalance
   },
 
   {
-    title: 'Reiki Healing',
-    level: 'All Levels',
+    id: 3,
+    title: 'Money Reiki',
+    level: 'Prosperity Healing',
     duration: '',
-    desc: 'Experience gentle energy healing designed to encourage relaxation, reduce stress, and support emotional and physical balance.',
-    image: ReikiHeal
+    desc: 'Clear energetic blocks related to wealth and abundance while attracting prosperity through Reiki-based healing practices.',
+    image: EnergyBalance
   },
 
   {
-    title: 'Sound Therapy',
-    level: 'Mind & Body',
+    id: 4,
+    title: 'Sacred Green Money Reiki',
+    level: 'Advanced Healing',
     duration: '',
-    desc: 'Immerse yourself in healing frequencies and calming vibrations that help quiet the mind and create deep relaxation.',
-    image: SoundTheraphy
+    desc: 'A specialized healing system that aligns your energy with abundance, success, and financial growth.',
+    image: EnergyBalance
   },
 
   {
-    title: 'Emotional Release',
-    level: 'Guided Session',
+    id: 5,
+    title: 'Bach Flower Therapy',
+    level: 'Natural Healing',
     duration: '',
-    desc: 'A safe and supportive space to release emotional tension, reconnect inward, and restore emotional clarity.',
-    image: EmotionalRelease
+    desc: 'Learn how flower remedies help restore emotional balance, reduce stress, and support overall mental wellbeing.',
+    image: EnergyBalance
   },
 
   {
-    title: 'Intuition Boost',
-    level: 'Inner Awareness',
+    id: 6,
+    title: 'Sigil Course',
+    level: 'Manifestation Practice',
     duration: '',
-    desc: 'Strengthen self-awareness and reconnect with your inner guidance through mindful and restorative practices.',
-    image: IntutionBoost
+    desc: 'Create powerful symbolic intentions to manifest goals, improve focus, and bring positive changes into your life.',
+    image: EnergyBalance
   },
 
   {
-    title: 'Energy Block Clear',
-    level: 'Holistic Healing',
+    id: 7,
+    title: 'Switchword Course',
+    level: 'Mind Power',
     duration: '',
-    desc: 'Identify and release stagnant energy to create greater flow, emotional ease, and renewed vitality.',
-    image: EnergyBlock
+    desc: 'Discover powerful words that help shift your subconscious mind and attract confidence, success, and positivity.',
+    image: EnergyBalance
+  },
+
+  {
+    id: 8,
+    title: 'Angel Therapy',
+    level: 'Spiritual Healing',
+    duration: '',
+    desc: 'Connect with angelic guidance through healing techniques that promote peace, protection, and spiritual awareness.',
+    image: EnergyBalance
+  },
+
+  {
+    id: 9,
+    title: 'Lama Fera',
+    level: 'Energy Healing',
+    duration: '',
+    desc: 'Experience a high-frequency healing method that clears negative energies and supports deep spiritual transformation.',
+    image: EnergyBalance
+  },
+
+  {
+    id: 10,
+    title: 'Quanyin Healing',
+    level: 'Divine Healing',
+    duration: '',
+    desc: 'Receive the compassionate healing energy of Kuan Yin to encourage forgiveness, emotional release, and inner peace.',
+    image: EnergyBalance
+  },
+
+  {
+    id: 11,
+    title: 'Shamanic Healing',
+    level: 'Ancient Wisdom',
+    duration: '',
+    desc: 'Reconnect with ancient healing traditions to release energetic blockages and restore balance in mind, body, and spirit.',
+    image: EnergyBalance
+  },
+
+  {
+    id: 12,
+    title: 'Sound Healing',
+    level: 'Vibrational Therapy',
+    duration: '',
+    desc: 'Experience healing through soothing sound frequencies that calm the mind, relax the body, and balance your energy.',
+    image: EnergyBalance
   }
 ]
 
 export default function Herosection () {
+  const [selectedClass, setSelectedClass] = useState<Course | null>(null)
+
+  const ActiveComponent = selectedClass?.component
+
   return (
-    <section className='bg-[#f4f3ef] py-50'>
-      <div className=' mx-auto md:px-30 px-5'>
-        <div className='grid lg:grid-cols-[420px_1fr] gap-16'>
-          {/* LEFT */}
-          <div className='md:sticky top-40 h-fit'>
-            <h2 className='text-5xl text-[#7c8140] mb-10'>Healing Services</h2>
+    <>
+      <section className='bg-[#f4f3ef] py-50'>
+        <div className=' px-5 md:px-15'>
+          <div className='md:flex justify-start items-start gap-16'>
+            {/* LEFT */}
 
-            <p className='text-2xl text-[#7c8140] mb-10'>
-              Restore. Release.
-              <span className='italic'> Reconnect.</span>
-            </p>
+            <div className='md:sticky top-40 h-fit'>
+              <h2 className='text-5xl text-[#7c8140] mb-10'>
+                Healing Services
+              </h2>
 
-            <p className='text-[#7c8140] leading-relaxed text-lg'>
-              Discover holistic healing experiences designed to support
-              emotional balance, inner clarity, relaxation, and energy
-              alignment.
-            </p>
+              <p className='text-2xl text-[#7c8140] mb-10'>
+                Restore. Release.
+                <span className='italic'> Reconnect.</span>
+              </p>
 
-            {/* <div className='flex gap-8 mt-10 text-[#7c8140]'>
-              <button className='underline'>All</button>
+              <p className='text-lg leading-relaxed text-[#7c8140]'>
+                Discover holistic healing experiences designed to support
+                emotional balance, inner clarity, relaxation, and energy
+                alignment.
+              </p>
 
-              <button>Energy Healing</button>
+              <a
+                href='https://calendar.app.google/Qx6jKM7bxUobEgBf8'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <button className='mt-10 underline text-[#7c8140]'>
+                  Book Your Slots
+                </button>
+              </a>
+            </div>
 
-              <button>Therapy</button>
-            </div> */}
-            <a href="https://calendar.app.google/Qx6jKM7bxUobEgBf8">
-            <button className='mt-10 text-[#7c8140] underline cursor-pointer'>Book Your Slots</button>
-            </a>
-          </div>
+            {/* RIGHT */}
 
-          {/* RIGHT */}
-          <div className='grid md:grid-cols-2 gap-10 '>
-            {classes.map((item, i) => (
-              <div key={i}>
-                <div className='overflow-hidden'>
-                  <img
-                    src={item.image}
-                    alt=''
-                    className='w-full h-[520px] object-cover hover:scale-105 transition duration-700'
-                  />
+            <div className='grid md:grid-cols-2 gap-4'>
+              {classes.map(item => (
+                <div
+                  key={item.id}
+                  onClick={() => setSelectedClass(item)}
+                  className='cursor-pointer'
+                >
+                  <div className='overflow-hidden'>
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className='w-full h-[520px] object-cover transition duration-700 hover:scale-105'
+                    />
+                  </div>
+
+                  <h3 className='mt-6 text-3xl text-[#7c8140]'>{item.title}</h3>
+
+                  <p className='mt-2 text-[#7c8140]'>{item.level}</p>
+
+                  <p className='mt-5 leading-8 text-[#7c8140]'>{item.desc}</p>
                 </div>
-
-                <h3 className='text-[#7c8140] text-3xl mt-6'>{item.title}</h3>
-
-                <div className='flex gap-8 mt-4 text-[#7c8140]'>
-                  <span>{item.level}</span>
-                  <span>{item.duration}</span>
-                </div>
-
-                <p className='mt-6 text-[#7c8140] leading-8'>{item.desc}</p>
-
-                
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Dynamic Sheet */}
+
+      <Sheet
+        open={selectedClass !== null}
+        onOpenChange={open => {
+          if (!open) setSelectedClass(null)
+        }}
+      >
+        <SheetContent className='!w-full sm:!w-[900px] lg:!w-[1100px] !max-w-none overflow-y-auto'>
+          {' '}
+          <SheetHeader>
+            <SheetTitle className='text-3xl text-[#7c8140]'>
+              {selectedClass?.title}
+            </SheetTitle>
+          </SheetHeader>
+          <div className='mt-8'>
+            {ActiveComponent ? (
+              <ActiveComponent />
+            ) : (
+              <div className='space-y-4'>
+                <img
+                  src={selectedClass?.image}
+                  alt={selectedClass?.title}
+                  className='w-full rounded-lg'
+                />
+
+                <p className='leading-8 text-gray-600'>{selectedClass?.desc}</p>
+
+                <p className='leading-8 text-gray-500'>
+                  Detailed information about this course will be available soon.
+                </p>
+              </div>
+            )}
+          </div>
+        </SheetContent>
+      </Sheet>
+    </>
   )
 }

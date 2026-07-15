@@ -11,10 +11,7 @@
       title: 'Classes',
       link: '/classes'
     },
-    {
-      title: 'Faqs',
-      link: '/faqs'
-    },
+
     {
       title: 'Events',
       link: '/events'

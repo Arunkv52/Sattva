@@ -5,7 +5,7 @@ import Noise from './Noise'
 const Footer = () => {
   return (
     <>
-      <footer className='bg-[#f2f2f2] md:py-8 py-5 md:px-15 px-5'>
+      <footer className='bg-[#f2f2f2] md:py-8 py-5 md:px-8 px-5'>
         <Noise
           patternSize={160}
           patternScaleX={1.9}
@@ -14,7 +14,7 @@ const Footer = () => {
           patternAlpha={10}
         />
         
-        <div className='footer-bottom md:flex rthhjustify-between items-start mt-15'>
+        <div className='footer-bottom md:flex justify-between items-start mt-15'>
           <div className='md:w-1/2 w-full'>
             <div className='md:w-[50%] w-full'>
               <p className='text-[#7a7346] text-md leading-4'>
@@ -36,7 +36,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div>
+              <div className='md:flex justify-start items-start gap-5 cursor-pointer'>
                 {Social.map(iitem => (
                   <>
                     <div>
