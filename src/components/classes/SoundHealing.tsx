@@ -192,6 +192,15 @@ export default function SoundHealing () {
       <section id='learn' className={`${sectionContainer} ${sectionSpace}`}>
         <div className='grid gap-16 md:grid-cols-[0.85fr_1.15fr]'>
           <div>
+            <img
+              src={HealImg}
+              alt='Soft light during a healing session'
+              ratio='aspect-[6/5]'
+              className='mt-10'
+            />
+          </div>
+
+          <div className='space-y-10'>
             <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 01
@@ -212,15 +221,6 @@ export default function SoundHealing () {
                 </p>
               </div>
             </div>
-            <img
-              src={HealImg}
-              alt='Soft light during a healing session'
-              ratio='aspect-[6/5]'
-              className='mt-10'
-            />
-          </div>
-
-          <div className='space-y-10'>
             <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 02
@@ -262,27 +262,6 @@ export default function SoundHealing () {
                 </p>
               </div>
             </div>
-
-            <div className='flex gap-6'>
-              <span className='font-serif text-3xl italic text-[#B8863E]'>
-                04
-              </span>
-              <div>
-                <h3 className='font-serif text-xl text-[#17140F]'>
-                  Emotional Healing and Release
-                </h3>
-                <p className='mt-2 text-[15px] leading-relaxed text-[#4A4331]'>
-                  Emotional healing is one of the most powerful aspects of sound
-                  healing. Vibrations and frequencies used in sound therapy can
-                  help release trapped emotions and blockages, leading to
-                  emotional balance and clarity. Whether you're working through
-                  grief, anxiety, or past trauma, sound healing can facilitate
-                  emotional release and healing. Sattva Holistics offers sound
-                  healing training to help individuals process and release
-                  emotional pain, fostering a sense of peace and equilibrium.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -300,6 +279,22 @@ export default function SoundHealing () {
             </div>
 
             <div className='space-y-7'>
+              <div className='border-l border-[#E8B454]/40 pl-6'>
+                <h3 className='font-serif text-lg text-[#F6F1E7]'>
+                  Increased Creativity and Intuition
+                </h3>
+                <p className='mt-1 text-[15px] leading-relaxed text-[#B9AE93]'>
+                  When the mind is relaxed and free from distractions,
+                  creativity and intuition naturally flourish. Sound healing
+                  encourages a flow state where individuals can tap into their
+                  creative potential and intuitive wisdom. The calming
+                  vibrations help clear mental fog, enhance cognitive function,
+                  and inspire new ideas. Satva Nest’s sound healing sessions
+                  help individuals reconnect with their creativity and
+                  intuition, whether for personal development or artistic
+                  expression.
+                </p>
+              </div>
               <div className='border-l border-[#E8B454]/40 pl-6'>
                 <h3 className='font-serif text-lg text-[#F6F1E7]'>
                   Detoxification and Improved Circulation
