@@ -94,7 +94,7 @@ export default function HeroSection() {
 
           {/* Right: Map */}
           <div className="relative">
-            <div className="relative rounded-[2.5rem] overflow-hidden border border-[#8a8750]/20 shadow-[0_50px_100px_-30px_rgba(90,88,50,0.35)]">
+            <div className="relative overflow-hidden border border-[#8a8750]/20 shadow-[0_50px_100px_-30px_rgba(90,88,50,0.35)]">
               <iframe
                 title="Sattva Holistics location"
                 src="https://www.google.com/maps?q=102/17+Main+Road,+Coimbatore,+Tamil+Nadu&output=embed"
@@ -108,7 +108,7 @@ export default function HeroSection() {
             </div>
 
             {/* Floating address / directions card */}
-            <div className="relative -mt-10 mx-6 md:absolute md:mx-0 md:left-8 md:bottom-8 md:mt-0 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/60 shadow-xl px-7 py-6 max-w-sm">
+            <div className="relative -mt-10 mx-6 md:absolute md:mx-0 md:left-8 md:bottom-8 md:mt-0  bg-white/80 backdrop-blur-xl border border-white/60 shadow-xl px-7 py-6 max-w-sm">
               <p className="text-xs uppercase tracking-[0.25em] text-[#8a8750]">
                 Sattva Holistics
               </p>

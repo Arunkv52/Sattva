@@ -65,8 +65,13 @@ const Navbar = () => {
             </Link>
           ))}
 
+
           <button className='mt-5 bg-[#8a8750] text-white py-3 rounded-xl hover:opacity-90 transition'>
+                                            <a href='https://payment.sattvaholistics.com/'>
+
             Register Now
+                      </a>
+
           </button>
         </div>
       </div>

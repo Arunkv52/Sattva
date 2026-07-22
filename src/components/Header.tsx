@@ -1,7 +1,6 @@
 import { FaFacebookF, FaInstagram, FaArrowRight } from 'react-icons/fa'
 import HeaderImage from '../assets/home/bg-main.jpg'
 import Navbar from './Navbar'
-import { Link } from 'react-router'
 
 const HeroSection = () => {
   return (

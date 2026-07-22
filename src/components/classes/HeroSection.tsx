@@ -9,8 +9,13 @@ import {
 
 import EnergyBalance from '../../assets/classes/Energy-balancing.jpg'
 import ReikiHeal from '../../assets/classes/reiki-heal.jpg'
+import AngelsHealImg from '../../assets/classes/Angel-healing/hero-img.jpg'
+import SoundHealingImg from '../../assets/classes/sound-healing/1.jpg'
 
 import  ReikiHealing  from './ReikiHealing'
+import AngelHealing from './AngelHealing'
+import SoundHealing from './SoundHealing'
+
 
 interface Course {
   id: number
@@ -30,7 +35,8 @@ const classes: Course[] = [
     duration: '',
     desc: 'Learn the traditional Japanese healing technique that channels universal life energy for self-healing, emotional balance, and spiritual growth.',
     image: ReikiHeal,
-    component: ReikiHealing
+    component: ReikiHealing 
+
   },
 
   {
@@ -39,7 +45,7 @@ const classes: Course[] = [
     level: 'Healing Course',
     duration: '',
     desc: 'Discover the healing properties of crystals to balance chakras, enhance wellbeing, and restore positive energy.',
-    image: EnergyBalance
+    image: AngelsHealImg
   },
 
   {
@@ -93,7 +99,8 @@ const classes: Course[] = [
     level: 'Spiritual Healing',
     duration: '',
     desc: 'Connect with angelic guidance through healing techniques that promote peace, protection, and spiritual awareness.',
-    image: EnergyBalance
+    image: AngelsHealImg,
+    component: AngelHealing
   },
 
   {
@@ -129,7 +136,8 @@ const classes: Course[] = [
     level: 'Vibrational Therapy',
     duration: '',
     desc: 'Experience healing through soothing sound frequencies that calm the mind, relax the body, and balance your energy.',
-    image: EnergyBalance
+    image: SoundHealingImg,
+    component: SoundHealing
   }
 ]
 
@@ -142,7 +150,7 @@ export default function Herosection () {
     <>
       <section className='bg-[#f4f3ef] py-50'>
         <div className=' px-5 md:px-15'>
-          <div className='md:flex justify-start items-start gap-16'>
+          <div className='md:flex flex md:flex-row flex-col justify-start items-start md:gap-20 gap-20'>
             {/* LEFT */}
 
             <div className='md:sticky top-40 h-fit'>
@@ -167,7 +175,7 @@ export default function Herosection () {
                 rel='noopener noreferrer'
               >
                 <button className='mt-10 underline text-[#7c8140]'>
-                  Book Your Slots
+                  Consultation
                 </button>
               </a>
             </div>
