@@ -1,4 +1,4 @@
-import { useState, ComponentType } from 'react'
+import { useState } from 'react'
 
 import {
   Sheet,
@@ -24,7 +24,7 @@ interface Course {
   duration: string
   desc: string
   image: string
-  component?: ComponentType
+  component?: any
 }
 
 const classes: Course[] = [

@@ -83,24 +83,7 @@ const SectionTitle: React.FC<{
 /* Every photograph on the page runs through this frame so the imagery reads
    as one considered set rather than stock photos dropped in ad hoc: a soft
    sepia/grayscale grade, a slim gold hairline, and a bottom-up shadow. */
-const ImageFrame: React.FC<{
-  src: string
-  alt: string
-  ratio?: string
-  className?: string
-}> = ({ src, alt, ratio = 'aspect-[4/5]', className = '' }) => (
-  <div
-    className={`group relative overflow-hidden rounded-[26px] border border-[#E8B454]/25 shadow-[0_30px_60px_-25px_rgba(0,0,0,0.45)] ${ratio} ${className}`}
-  >
-    <img
-      src={src}
-      alt={alt}
-      className='h-full w-full object-cover grayscale-[12%] sepia-[10%] contrast-[1.05] transition duration-700 ease-out group-hover:scale-[1.04]'
-    />
-    <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent' />
-    <div className='pointer-events-none absolute inset-0 rounded-[26px] ring-1 ring-inset ring-[#E8B454]/15' />
-  </div>
-)
+
 
 const pageBg = 'bg-[#F6F1E7] text-[#17140F]'
 const inkBg = 'bg-[#1c939e]'
@@ -185,7 +168,7 @@ export default function AngelHealing () {
           <img
             src={AngelImg}
             alt='Candlelit healing space at Sattva Holistics'
-            ratio='aspect-[4/5]'
+            
             className='rise'
           />
         </div>
@@ -199,7 +182,7 @@ export default function AngelHealing () {
           <img
             src={AngelImg1}
             alt='Practitioner channeling healing energy'
-            ratio='aspect-[4/5]'
+            
             className='md:order-2'
           />
 
@@ -240,7 +223,6 @@ export default function AngelHealing () {
             <img
               src={HealImg}
               alt='Soft light during a healing session'
-              ratio='aspect-[6/5]'
               className='mt-10'
             />
           </div>
@@ -327,7 +309,7 @@ export default function AngelHealing () {
               <img
                 src={BenefitsImg}
                 alt='A calm space for reflection'
-                ratio='aspect-[9/10]'
+                
                 className='mt-10'
               />
             </div>
@@ -461,7 +443,7 @@ export default function AngelHealing () {
             <img
               src={FaqImg}
               alt='A quiet corner for reflection before a session'
-              ratio='aspect-[8/9]'
+            
               className='mt-10'
             />
           </div>
