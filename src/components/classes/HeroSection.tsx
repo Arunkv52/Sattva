@@ -15,6 +15,17 @@ import SoundHealingImg from '../../assets/classes/sound-healing/1.jpg'
 import  ReikiHealing  from './ReikiHealing'
 import AngelHealing from './AngelHealing'
 import SoundHealing from './SoundHealing'
+import CrystalTherapy from './CrystalTherapy'
+import MoneyReiki from './MoneyReiki'
+import SacredGreen from './SacredGreen'
+import Bachflower from './Bachflower'
+import SigilCourse from './SigilCourse'
+import SwitchwordCourse from './SwitchwordCourse'
+import LamaFera from './LamaFera'
+import QuanyinHealing from './QuanyinHealing'
+import ShamanicHealing from './ShamanicHealing'
+
+
 
 
 interface Course {
@@ -44,8 +55,9 @@ const classes: Course[] = [
     title: 'Crystal Therapy',
     level: 'Healing Course',
     duration: '',
-    desc: 'Discover the healing properties of crystals to balance chakras, enhance wellbeing, and restore positive energy.',
-    image: AngelsHealImg
+    desc: 'Join our Crystal Therapy Course and discover how crystal energy can transform your life while empowering you to help others on their healing journey.',
+    image: AngelsHealImg,
+    component: CrystalTherapy
   },
 
   {
@@ -53,8 +65,10 @@ const classes: Course[] = [
     title: 'Money Reiki',
     level: 'Prosperity Healing',
     duration: '',
-    desc: 'Clear energetic blocks related to wealth and abundance while attracting prosperity through Reiki-based healing practices.',
-    image: EnergyBalance
+    desc: 'Our Money Reiki Course empowers you to develop a healthier relationship with money while creating a foundation for long-term abundance and success.',
+    image: EnergyBalance,
+    component: MoneyReiki
+
   },
 
   {
@@ -63,7 +77,8 @@ const classes: Course[] = [
     level: 'Advanced Healing',
     duration: '',
     desc: 'A specialized healing system that aligns your energy with abundance, success, and financial growth.',
-    image: EnergyBalance
+    image: EnergyBalance,
+    component: SacredGreen
   },
 
   {
@@ -72,7 +87,8 @@ const classes: Course[] = [
     level: 'Natural Healing',
     duration: '',
     desc: 'Learn how flower remedies help restore emotional balance, reduce stress, and support overall mental wellbeing.',
-    image: EnergyBalance
+    image: EnergyBalance,
+    component: Bachflower
   },
 
   {
@@ -80,8 +96,9 @@ const classes: Course[] = [
     title: 'Sigil Course',
     level: 'Manifestation Practice',
     duration: '',
-    desc: 'Create powerful symbolic intentions to manifest goals, improve focus, and bring positive changes into your life.',
-    image: EnergyBalance
+    desc: 'Transform your intentions into powerful symbols, unlock your inner potential, and create a life guided by purpose, clarity, and possibility',
+    image: EnergyBalance,
+    component: SigilCourse
   },
 
   {
@@ -89,8 +106,9 @@ const classes: Course[] = [
     title: 'Switchword Course',
     level: 'Mind Power',
     duration: '',
-    desc: 'Discover powerful words that help shift your subconscious mind and attract confidence, success, and positivity.',
-    image: EnergyBalance
+    desc: 'Unlock the power of words, transform your mindset, and create a life filled with confidence, positivity, and limitless possibilities.',
+    image: EnergyBalance,
+    component: SwitchwordCourse
   },
 
   {
@@ -108,8 +126,9 @@ const classes: Course[] = [
     title: 'Lama Fera',
     level: 'Energy Healing',
     duration: '',
-    desc: 'Experience a high-frequency healing method that clears negative energies and supports deep spiritual transformation.',
-    image: EnergyBalance
+    desc: 'Experience the transformative power of Lama Fera, release energetic blockages, and awaken a deeper sense of peace, positivity, and spiritual connection.',
+    image: EnergyBalance,
+    component: LamaFera
   },
 
   {
@@ -117,8 +136,9 @@ const classes: Course[] = [
     title: 'Quanyin Healing',
     level: 'Divine Healing',
     duration: '',
-    desc: 'Receive the compassionate healing energy of Kuan Yin to encourage forgiveness, emotional release, and inner peace.',
-    image: EnergyBalance
+    desc: 'Open your heart to the energy of compassion, embrace forgiveness, and experience the healing power of love, peace, and spiritual awakening.',
+    image: EnergyBalance,
+    component: QuanyinHealing
   },
 
   {
@@ -126,8 +146,9 @@ const classes: Course[] = [
     title: 'Shamanic Healing',
     level: 'Ancient Wisdom',
     duration: '',
-    desc: 'Reconnect with ancient healing traditions to release energetic blockages and restore balance in mind, body, and spirit.',
-    image: EnergyBalance
+    desc: 'Reconnect with your inner wisdom, embrace positive change, and experience a journey of healing, balance, and spiritual awakening through Shamanic Healing.',
+    image: EnergyBalance,
+    component : ShamanicHealing
   },
 
   {
@@ -199,7 +220,6 @@ export default function Herosection () {
 
                   <h3 className='mt-6 text-3xl text-[#7c8140]'>{item.title}</h3>
 
-                  <p className='mt-2 text-[#7c8140]'>{item.level}</p>
 
                   <p className='mt-5 leading-8 text-[#7c8140]'>{item.desc}</p>
                 </div>
