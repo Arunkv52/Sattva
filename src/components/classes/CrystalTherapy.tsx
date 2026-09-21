@@ -1,9 +1,4 @@
-import AngelImg from '../../assets/classes/Angel-healing/hero-img.jpg'
 import AngelImg1 from '../../assets/classes/Angel-healing/wings-fly.jpg'
-import ConclutionImg from '../../assets/classes/Angel-healing/distant-healing-message-banner-background.jpg'
-import HealImg from '../../assets/classes/Angel-healing/healing-work.jpg'
-import BenefitsImg from '../../assets/classes/Angel-healing/benefits.jpg'
-import FaqImg from '../../assets/classes/Angel-healing/faq.jpg'
 
 type RingMarkProps = {
   size?: number
@@ -82,7 +77,6 @@ const SectionTitle: React.FC<{
    sepia/grayscale grade, a slim gold hairline, and a bottom-up shadow. */
 
 const pageBg = 'bg-[#F6F1E7] text-[#17140F]'
-const inkBg = 'bg-[#1c939e]'
 const emeraldBg = 'bg-[#083326]'
 const sectionContainer = 'mx-auto max-w-6xl px-6 md:px-10'
 const sectionSpace = 'py-20 md:py-28'
@@ -507,7 +501,7 @@ export default function CrystalTherapy () {
       {/* ————————————————————— CLOSING ————————————————————— */}
       <section className='relative overflow-hidden bg-[#f5f4f0]'>
        
-        <div className='absolute inset-0 bg-gradient-to-b from-[#12100C]/50 via-[#12100C]/80 to-[#12100C]/95' />
+        <div className='absolute inset-0 bg-linear-to-b from-[#12100C]/50 via-[#12100C]/80 to-[#12100C]/95' />
 
         <div className='relative mx-auto max-w-6xl px-10 py-28 md:py-20'>
           <p className='text-[#E8B454] py-2'>Conclusion</p>

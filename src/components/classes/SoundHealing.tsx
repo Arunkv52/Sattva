@@ -1,7 +1,4 @@
-import AngelImg from '../../assets/classes/sound-healing/1.jpg'
-import ConclutionImg from '../../assets/classes/Angel-healing/distant-healing-message-banner-background.jpg'
-import HealImg from '../../assets/classes/sound-healing/2.jpg'
-import BenefitsImg from '../../assets/classes/sound-healing/5.jpg'
+
 import FaqImg from '../../assets/classes/sound-healing/6.jpg'
 
 type RingMarkProps = {
@@ -459,7 +456,7 @@ export default function SoundHealing () {
 
       {/* ————————————————————— CLOSING ————————————————————— */}
       <section className='relative overflow-hidden'>
-        <div className='absolute inset-0 bg-gradient-to-b from-[#12100C]/50 via-[#12100C]/80 to-[#12100C]/95' />
+        <div className='absolute inset-0 bg-linear-to-b from-[#12100C]/50 via-[#12100C]/80 to-[#12100C]/95' />
 
         <div className='relative mx-auto max-w-full px-10 py-28 md:py-20'>
           <p className='text-[#E8B454] text-left py-2'>Conclusion</p>

@@ -163,7 +163,7 @@ export default function SattvaReiki () {
       `}</style>
 
       <section className='relative mx-auto max-w-full overflow-hidden px-6 pb-24 pt-10 md:px-10 md:pb-32 md:pt-16'>
-        <div className='pointer-events-none absolute -right-24 top-0 opacity-90 md:-right-10 md:top-[-40px]'>
+        <div className='pointer-events-none absolute -right-24 top-0 opacity-90 md:-right-10 md:-top-10'>
           <RingMark size={420} animate className='opacity-30' />
         </div>
 
@@ -194,7 +194,7 @@ export default function SattvaReiki () {
           <div className='mt-10 flex flex-wrap items-center gap-4'>
             <a
               href='#enroll'
-              className='rounded-full bg-[#E8B454] px-7 py-3.5 text-sm font-medium text-[#2F2140] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_-10px_rgba(232,180,84,0.45)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E8B454]'
+              className='rounded-full bg-[#E8B454] px-7 py-3.5 text-sm font-medium text-[#2F2140] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_-10px_rgba(232,180,84,0.45)] focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-[#E8B454]'
             >
               Consultation
             </a>
@@ -300,7 +300,7 @@ export default function SattvaReiki () {
             balance, relaxation, and well-being as your journey of personal and
             spiritual growth continues.
           </p>
-          <a href='#enroll' className='inline-flex items-center gap-2 rounded-full bg-[#E8B454] px-8 py-3.5 text-sm font-medium tracking-wide text-[#1C1206] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_34px_-12px_rgba(232,180,84,0.55)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E8B454] mt-10'>
+          <a href='#enroll' className='inline-flex items-center gap-2 rounded-full bg-[#E8B454] px-8 py-3.5 text-sm font-medium tracking-wide text-[#1C1206] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_34px_-12px_rgba(232,180,84,0.55)] focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-[#E8B454] mt-10'>
             Book a Session
           </a>
         </div>

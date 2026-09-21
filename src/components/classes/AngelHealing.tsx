@@ -1,7 +1,4 @@
-import AngelImg from '../../assets/classes/Angel-healing/hero-img.jpg'
 import AngelImg1 from '../../assets/classes/Angel-healing/wings-fly.jpg'
-import ConclutionImg from '../../assets/classes/Angel-healing/distant-healing-message-banner-background.jpg'
-import HealImg from '../../assets/classes/Angel-healing/healing-work.jpg'
 import BenefitsImg from '../../assets/classes/Angel-healing/benefits.jpg'
 import FaqImg from '../../assets/classes/Angel-healing/faq.jpg'
 
@@ -497,7 +494,7 @@ export default function AngelHealing () {
 
       {/* ————————————————————— CLOSING ————————————————————— */}
       <section className='relative overflow-hidden'>
-        <div className='absolute inset-0 bg-gradient-to-b from-[#12100C]/50 via-[#12100C]/80 to-[#12100C]/95' />
+        <div className='absolute inset-0 bg-linear-to-b from-[#12100C]/50 via-[#12100C]/80 to-[#12100C]/95' />
 
         <div className='relative mx-auto max-w-6xl px-10 py-28 md:py-20'>
           <p className='text-[#E8B454] text-left py-2'>Conclusion</p>

@@ -3,8 +3,8 @@ import { useState } from 'react'
 import {
   Sheet,
   SheetContent,
-  SheetHeader,
-  SheetTitle
+  // SheetHeader,
+  // SheetTitle
 } from '@/components/ui/sheet'
 
 import EnergyBalance from '../../assets/classes/Energy-balancing.jpg'
@@ -214,7 +214,7 @@ export default function Herosection () {
                     <img
                       src={item.image}
                       alt={item.title}
-                      className='w-full h-[520px] object-cover transition duration-700 hover:scale-105'
+                      className='w-full h-130 object-cover transition duration-700 hover:scale-105'
                     />
                   </div>
 
@@ -237,7 +237,7 @@ export default function Herosection () {
           if (!open) setSelectedClass(null)
         }}
       >
-        <SheetContent className='!w-full sm:!w-[900px] lg:!w-[1100px] !max-w-none overflow-y-auto'>
+        <SheetContent className='w-full! sm:w-225! lg:w-275! max-w-none! overflow-y-auto'>
           {' '}
           
           <div className='mt-0'>
