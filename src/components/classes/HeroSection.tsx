@@ -195,7 +195,7 @@ export default function Herosection () {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <button className='mt-10 underline text-[#7c8140]'>
+                <button className='mt-10 underline text-[#7c8140] hover:cursor-pointer'>
                   Consultation
                 </button>
               </a>
@@ -239,12 +239,8 @@ export default function Herosection () {
       >
         <SheetContent className='!w-full sm:!w-[900px] lg:!w-[1100px] !max-w-none overflow-y-auto'>
           {' '}
-          <SheetHeader>
-            <SheetTitle className='text-3xl text-[#7c8140]'>
-              {selectedClass?.title}
-            </SheetTitle>
-          </SheetHeader>
-          <div className='mt-8'>
+          
+          <div className='mt-0'>
             {ActiveComponent ? (
               <ActiveComponent />
             ) : (

@@ -52,7 +52,7 @@ const Eyebrow: React.FC<{ children: React.ReactNode; dark?: boolean }> = ({
   <div className='mb-5 flex items-center gap-0'>
     <span className=' bg-[#E8B454]' />
     <p
-      className={`text-[11px] font-medium uppercase tracking-[0.32em] ${
+      className={`text-base font-medium uppercase ${
         dark ? 'text-[#E8B454]' : 'text-[#8A6B2E]'
       }`}
     >
@@ -126,7 +126,7 @@ export default function SwitchwordCourse () {
       {/* ————————————————————— HERO ————————————————————— */}
       <section className='relative overflow-hidden'>
         <div
-          className={`${sectionContainer} grid gap-14 pb-20 pt-16 md:grid-cols-[1.05fr_0.95fr] md:items-center md:pb-28 md:pt-24`}
+          className={`${sectionContainer} grid gap-14 pb-20 pt-16 md:grid-cols-1 md:items-center md:pb-28 md:pt-24`}
         >
           <div className='relative rise'>
             <div className='pointer-events-none absolute -left-16 -top-40 opacity-70 md:-left-20'>
@@ -135,12 +135,12 @@ export default function SwitchwordCourse () {
 
             <Eyebrow>Switchword Course · Coimbatore</Eyebrow>
 
-            <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-[3.75rem]'>
+            <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-5xl'>
               Unlock the Power of Positive
               <span className='block italic text-[#B8863E]'>Words</span>
             </h1>
 
-            <p className='mt-8 max-w-xl text-[17px] leading-relaxed text-[#3A3325]'>
+            <p className='mt-8 max-w-full text-[17px] leading-relaxed text-[#3A3325]'>
               Switchwords are powerful words believed to connect directly with
               the subconscious mind, helping attract desired results and
               positive transformations. This course teaches how specific words
@@ -155,11 +155,7 @@ export default function SwitchwordCourse () {
             </div>
           </div>
 
-          <img
-            src={AngelImg}
-            alt='Candlelit healing space at Sattva Holistics'
-            className='rise'
-          />
+         
         </div>
       </section>
 
@@ -176,14 +172,14 @@ export default function SwitchwordCourse () {
 
           <div className='md:order-1'>
             <Eyebrow dark>What is a Switchword Course?</Eyebrow>
-            <p className='mt-6 text-[16px] leading-relaxed text-[#D8CFBB]'>
+            <p className='mt-6 text-base leading-relaxed text-[#D8CFBB]'>
               A Switchword Course teaches the use of special power words known
               as Switchwords, which are believed to help direct the subconscious
               mind toward specific goals, positive outcomes, and personal
               transformation. These words act as mental triggers that help shift
               thoughts, emotions, and energy patterns toward desired results.
             </p>
-            <p className='mt-6 text-[16px] leading-relaxed text-[#D8CFBB]'>
+            <p className='mt-6 text-base leading-relaxed text-[#D8CFBB]'>
               Switchwords can be used for various areas of life, including
               confidence, success, abundance, relationships, health,
               concentration, motivation, and emotional well-being. This course
@@ -205,16 +201,10 @@ export default function SwitchwordCourse () {
               intentions into meaningful symbols and use them as tools for focus
               and manifestation.
             </p>
-
-            <img
-              src={HealImg}
-              alt='Soft light during a healing session'
-              className='mt-10'
-            />
           </div>
 
-          <div className='space-y-10'>
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+          <div className='space-y-5'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 01
               </span>
@@ -225,7 +215,7 @@ export default function SwitchwordCourse () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 02
               </span>
@@ -236,7 +226,7 @@ export default function SwitchwordCourse () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 03
               </span>
@@ -247,7 +237,7 @@ export default function SwitchwordCourse () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 04
               </span>
@@ -258,7 +248,7 @@ export default function SwitchwordCourse () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 05
               </span>
@@ -496,20 +486,16 @@ export default function SwitchwordCourse () {
 
       {/* ————————————————————— CLOSING ————————————————————— */}
       <section className='relative overflow-hidden'>
-        <img
-          src={ConclutionImg}
-          alt='Golden hour light, closing the page'
-          className='absolute inset-0 h-full w-full object-cover grayscale-[20%] sepia-[15%]'
-        />
+       
         <div className='absolute inset-0 bg-gradient-to-b from-[#12100C]/50 via-[#12100C]/80 to-[#12100C]/95' />
 
-        <div className='relative mx-auto max-w-4xl px-6 py-28 text-center md:py-36'>
-          <p className='text-[#E8B454] text-center py-2'>Conclusion</p>
+        <div className='relative mx-auto max-w-6xl px-10 py-28 md:py-20'>
+          <p className='text-[#E8B454] text-left py-2'>Conclusion</p>
 
-          <p className='font-serif text-2xl italic leading-snug text-[#F6F1E7] md:text-2xl'>
+          <p className='font-serif text-2xl leading-snug text-[#F6F1E7] md:text-2xl'>
             A Switchword Course is a simple yet powerful approach to personal empowerment and positive transformation. By learning how to use specific words with focused intention, individuals can cultivate a more positive mindset, improve self-confidence, and align themselves with their goals and aspirations.
           </p>
-          <p className='font-serif text-2xl italic leading-snug text-[#F6F1E7] md:text-2xl'>
+          <p className='font-serif text-2xl leading-snug text-[#F6F1E7] md:text-2xl'>
             Whether you seek success, abundance, emotional balance, better relationships, or personal growth, Switchwords can serve as valuable tools for creating positive changes in your daily life. Through consistent practice, they can help you develop clarity, motivation, and a stronger connection to your desired outcomes.
           </p>
 

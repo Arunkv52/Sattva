@@ -52,7 +52,7 @@ const Eyebrow: React.FC<{ children: React.ReactNode; dark?: boolean }> = ({
   <div className='mb-5 flex items-center gap-0'>
     <span className=' bg-[#E8B454]' />
     <p
-      className={`text-[11px] font-medium uppercase tracking-[0.32em] ${
+      className={`text-base font-medium uppercase ${
         dark ? 'text-[#E8B454]' : 'text-[#8A6B2E]'
       }`}
     >
@@ -126,7 +126,7 @@ export default function LamaFera () {
       {/* ————————————————————— HERO ————————————————————— */}
       <section className='relative overflow-hidden'>
         <div
-          className={`${sectionContainer} grid gap-14 pb-20 pt-16 md:grid-cols-[1.05fr_0.95fr] md:items-center md:pb-28 md:pt-24`}
+          className={`${sectionContainer} grid gap-14 pb-20 pt-16 md:grid-cols-1 md:items-center md:pb-28 md:pt-24`}
         >
           <div className='relative rise'>
             <div className='pointer-events-none absolute -left-16 -top-40 opacity-70 md:-left-20'>
@@ -135,12 +135,12 @@ export default function LamaFera () {
 
             <Eyebrow>Lama Fera · Coimbatore</Eyebrow>
 
-            <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-[3.75rem]'>
+            <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-5xl'>
               Ancient Buddhist Healing
               <span className='block italic text-[#B8863E]'>Energy System</span>
             </h1>
 
-            <p className='mt-8 max-w-xl text-[17px] leading-relaxed text-[#3A3325]'>
+            <p className='mt-8 max-w-full text-[17px] leading-relaxed text-[#3A3325]'>
               Lama Fera is a powerful healing technique rooted in ancient
               Buddhist traditions. It is known for its ability to clear negative
               energies, remove blockages, and promote deep healing at physical,
@@ -153,12 +153,6 @@ export default function LamaFera () {
               </a>
             </div>
           </div>
-
-          <img
-            src={AngelImg}
-            alt='Candlelit healing space at Sattva Holistics'
-            className='rise'
-          />
         </div>
       </section>
 
@@ -175,14 +169,14 @@ export default function LamaFera () {
 
           <div className='md:order-1'>
             <Eyebrow dark>What is Lama Fera?</Eyebrow>
-            <p className='mt-6 text-[16px] leading-relaxed text-[#D8CFBB]'>
+            <p className='mt-6 text-base leading-relaxed text-[#D8CFBB]'>
               Lama Fera is a powerful ancient Buddhist energy healing system
               that is believed to channel high-frequency spiritual energy for
               cleansing, healing, and transformation. The term "Lama" refers to
               a spiritual master, while "Fera" means the transmission or
               circulation of healing energy.
             </p>
-            <p className='mt-6 text-[16px] leading-relaxed text-[#D8CFBB]'>
+            <p className='mt-6 text-base leading-relaxed text-[#D8CFBB]'>
               Lama Fera is widely practiced as a holistic healing modality that
               helps remove negative energies, clear energy blockages, strengthen
               the aura, and promote physical, emotional, mental, and spiritual
@@ -204,16 +198,10 @@ export default function LamaFera () {
               symbols, techniques, and attunements that help cleanse and balance
               a person's energy field.
             </p>
-
-            <img
-              src={HealImg}
-              alt='Soft light during a healing session'
-              className='mt-10'
-            />
           </div>
 
-          <div className='space-y-10'>
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+          <div className='space-y-5'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 01
               </span>
@@ -224,7 +212,7 @@ export default function LamaFera () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 02
               </span>
@@ -235,7 +223,7 @@ export default function LamaFera () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 03
               </span>
@@ -246,7 +234,7 @@ export default function LamaFera () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 04
               </span>
@@ -257,7 +245,7 @@ export default function LamaFera () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 05
               </span>
@@ -495,20 +483,15 @@ export default function LamaFera () {
 
       {/* ————————————————————— CLOSING ————————————————————— */}
       <section className='relative overflow-hidden'>
-        <img
-          src={ConclutionImg}
-          alt='Golden hour light, closing the page'
-          className='absolute inset-0 h-full w-full object-cover grayscale-[20%] sepia-[15%]'
-        />
-        <div className='absolute inset-0 bg-gradient-to-b from-[#12100C]/50 via-[#12100C]/80 to-[#12100C]/95' />
+       <div className='absolute inset-0 bg-gradient-to-b from-[#12100C]/50 via-[#12100C]/80 to-[#12100C]/95' />
 
-        <div className='relative mx-auto max-w-4xl px-6 py-28 text-center md:py-36'>
-          <p className='text-[#E8B454] text-center py-2'>Conclusion</p>
+        <div className='relative mx-auto max-w-6xl px-10 py-28 md:py-20'>
+          <p className='text-[#E8B454] text-left py-2'>Conclusion</p>
 
-          <p className='font-serif text-2xl italic leading-snug text-[#F6F1E7] md:text-2xl'>
+          <p className='font-serif text-2xl leading-snug text-[#F6F1E7] md:text-2xl'>
             Lama Fera is a powerful energy healing practice that focuses on cleansing negative energies, balancing the energy system, and promoting holistic well-being. Through specialized healing techniques and spiritual energy transmission, it helps individuals experience greater emotional balance, mental clarity, spiritual growth, and inner peace.
           </p>
-          <p className='font-serif text-2xl italic leading-snug text-[#F6F1E7] md:text-2xl'>
+          <p className='font-serif text-2xl leading-snug text-[#F6F1E7] md:text-2xl'>
             Whether you are seeking self-healing, energy purification, personal transformation, or spiritual development, Lama Fera offers a profound path toward balance, harmony, and holistic wellness.
           </p>
 

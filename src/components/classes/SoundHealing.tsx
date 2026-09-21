@@ -76,8 +76,6 @@ const SectionTitle: React.FC<{
   </h2>
 )
 
-
-
 const pageBg = 'bg-[#F6F1E7] text-[#17140F]'
 const inkBg = 'bg-[#1c939e]'
 const emeraldBg = 'bg-[#083326]'
@@ -125,23 +123,23 @@ export default function SoundHealing () {
       {/* ————————————————————— HERO ————————————————————— */}
       <section className='relative overflow-hidden'>
         <div
-          className={`${sectionContainer} grid gap-14 pb-20 pt-16 md:grid-cols-[1.05fr_0.95fr] md:items-center md:pb-28 md:pt-24`}
+          className={`${sectionContainer} grid gap-14 pb-20 pt-16 md:grid-cols-1 md:items-center md:pb-28 md:pt-24`}
         >
           <div className='relative rise'>
             <div className='pointer-events-none absolute -left-16 -top-40 opacity-70 md:-left-20'>
               <RingMark size={200} animate />
             </div>
 
-            <Eyebrow>Angel Healing Services · Coimbatore</Eyebrow>
+            <Eyebrow>Sound Healing · Coimbatore</Eyebrow>
 
-            <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-5xl'>
+            <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-4xl'>
               Top 10 Ways Sound Healing Can Transform Your Well-Being:
               <span className='block italic text-[#B8863E]'>
                 Unlock the Power of Vibrations at Sattva Holistics
               </span>
             </h1>
 
-            <p className='mt-8 max-w-xl text-[17px] leading-relaxed text-[#3A3325]'>
+            <p className='mt-8 max-w-full text-[17px] leading-relaxed text-[#3A3325]'>
               Sound healing, a practice that uses vibrations and frequencies to
               promote health and balance, is becoming increasingly popular for
               those seeking natural ways to enhance their well-being. Whether
@@ -158,37 +156,22 @@ export default function SoundHealing () {
               </a>
             </div>
           </div>
-
-          <img
-            src={AngelImg}
-            alt='Candlelit healing space at Sattva Holistics'
-            className='rise'
-          />
         </div>
       </section>
 
-      {/* ————————————————————— HOW IT WORKS ————————————————————— */}
-      <section id='learn' className={`${sectionContainer} ${sectionSpace}`}>
-        <div className='grid gap-16 md:grid-cols-[0.85fr_1.15fr]'>
-          <div>
-            <img
-              src={HealImg}
-              alt='Soft light during a healing session'
-              
-              className='mt-10'
-            />
-          </div>
+     
+     
 
-          <div className='space-y-10'>
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
-              <span className='font-serif text-3xl italic text-[#B8863E]'>
-                01
-              </span>
-              <div>
-                <h3 className='font-serif text-xl text-[#17140F]'>
+      {/* ————————————————————— BENEFITS ————————————————————— */}
+      <section className={inkBg}>
+        <div className={`${sectionContainer} ${sectionSpace}`}>
+          <div className='grid gap-14 md:grid-cols-1 md:items-start'>
+            <div className='space-y-5'>
+              <div className='border-l border-[#E8B454]/40 pl-6'>
+                <h3 className='font-serif text-xl text-white'>
                   Stress Reduction and Relaxation
                 </h3>
-                <p className='mt-2 text-[15px] leading-relaxed text-[#4A4331]'>
+                <p className='mt-2 text-[15px] leading-relaxed text-[#dadad9]'>
                   One of the most immediate and profound benefits of sound
                   healing is stress reduction. The use of specific sound
                   frequencies, such as those from Tibetan singing bowls, gongs,
@@ -199,70 +182,48 @@ export default function SoundHealing () {
                   allowing individuals to unwind and release stress.
                 </p>
               </div>
-            </div>
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
-              <span className='font-serif text-3xl italic text-[#B8863E]'>
-                02
-              </span>
-              <div>
-                <h3 className='font-serif text-xl text-[#17140F]'>
-                  Pain Relief and Healing
-                </h3>
-                <p className='mt-2 text-[15px] leading-relaxed text-[#4A4331]'>
-                  Sound healing has been shown to alleviate both acute and
-                  chronic pain by stimulating the body's natural healing
-                  processes. By applying sound frequencies to specific areas of
-                  the body, sound healing can increase circulation, reduce
-                  inflammation, and ease muscle tension. Through Sattva
-                  Holistics's sound healing programs and training, individuals
-                  can learn techniques to target pain relief, promoting faster
-                  recovery and improved mobility
-                </p>
+              <div className='border-l border-[#E8B454]/40 pl-6'>
+                
+                <div>
+                  <h3 className='font-serif text-xl text-white'>
+                    Pain Relief and Healing
+                  </h3>
+                  <p className='mt-2 text-[15px] leading-relaxed text-[#dadad9]'>
+                    Sound healing has been shown to alleviate both acute and
+                    chronic pain by stimulating the body's natural healing
+                    processes. By applying sound frequencies to specific areas
+                    of the body, sound healing can increase circulation, reduce
+                    inflammation, and ease muscle tension. Through Sattva
+                    Holistics's sound healing programs and training, individuals
+                    can learn techniques to target pain relief, promoting faster
+                    recovery and improved mobility
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
-              <span className='font-serif text-3xl italic text-[#B8863E]'>
-                03
-              </span>
-              <div>
-                <h3 className='font-serif text-xl text-[#17140F]'>
-                  Improved Sleep Quality
-                </h3>
-                <p className='mt-2 text-[15px] leading-relaxed text-[#4A4331]'>
-                  Sound healing plays a key role in improving sleep quality. The
-                  soothing vibrations help calm the nervous system, making it
-                  easier for individuals to fall into a deep, restorative sleep.
-                  Regular sound healing sessions can help regulate the
-                  production of melatonin, a hormone responsible for promoting
-                  restful sleep. At Sattva Holistics, sound healing is
-                  integrated into mindfulness practices that support better
-                  sleep patterns and relaxation.
-                </p>
+              <div className='border-l border-[#E8B454]/40 pl-6'>
+                
+                <div>
+                  <h3 className='font-serif text-xl text-white'>
+                    Improved Sleep Quality
+                  </h3>
+                  <p className='mt-2 text-[15px] leading-relaxed text-[#dadad9]'>
+                    Sound healing plays a key role in improving sleep quality.
+                    The soothing vibrations help calm the nervous system, making
+                    it easier for individuals to fall into a deep, restorative
+                    sleep. Regular sound healing sessions can help regulate the
+                    production of melatonin, a hormone responsible for promoting
+                    restful sleep. At Sattva Holistics, sound healing is
+                    integrated into mindfulness practices that support better
+                    sleep patterns and relaxation.
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ————————————————————— BENEFITS ————————————————————— */}
-      <section className={inkBg}>
-        <div className={`${sectionContainer} ${sectionSpace}`}>
-          <div className='grid gap-14 md:grid-cols-2 md:items-start'>
-            <div>
-              <img
-                src={BenefitsImg}
-                alt='A calm space for reflection'
-                className='mt-0'
-              />
-            </div>
-
-            <div className='space-y-7'>
               <div className='border-l border-[#E8B454]/40 pl-6'>
                 <h3 className='font-serif text-lg text-[#F6F1E7]'>
                   Increased Creativity and Intuition
                 </h3>
-                <p className='mt-1 text-[15px] leading-relaxed text-[#B9AE93]'>
+                <p className='mt-1 text-[15px] leading-relaxed text-[#dadad9]'>
                   When the mind is relaxed and free from distractions,
                   creativity and intuition naturally flourish. Sound healing
                   encourages a flow state where individuals can tap into their
@@ -278,7 +239,7 @@ export default function SoundHealing () {
                 <h3 className='font-serif text-lg text-[#F6F1E7]'>
                   Detoxification and Improved Circulation
                 </h3>
-                <p className='mt-1 text-[15px] leading-relaxed text-[#B9AE93]'>
+                <p className='mt-1 text-[15px] leading-relaxed text-[#dadad9]'>
                   Sound healing promotes the body’s natural detoxification
                   process by stimulating blood circulation and lymphatic
                   drainage. This supports the removal of toxins, improves
@@ -292,7 +253,7 @@ export default function SoundHealing () {
                 <h3 className='font-serif text-lg text-[#F6F1E7]'>
                   Holistic Well-Being and Balance
                 </h3>
-                <p className='mt-1 text-[15px] leading-relaxed text-[#B9AE93]'>
+                <p className='mt-1 text-[15px] leading-relaxed text-[#dadad9]'>
                   Ultimately, sound healing provides a holistic approach to
                   well-being by addressing the body, mind, and spirit. It helps
                   individuals achieve balance in their physical health,
@@ -401,7 +362,6 @@ export default function SoundHealing () {
             <img
               src={FaqImg}
               alt='A quiet corner for reflection before a session'
-              
               className='mt-10'
             />
           </div>
@@ -499,17 +459,12 @@ export default function SoundHealing () {
 
       {/* ————————————————————— CLOSING ————————————————————— */}
       <section className='relative overflow-hidden'>
-        <img
-          src={ConclutionImg}
-          alt='Golden hour light, closing the page'
-          className='absolute inset-0 h-full w-full object-cover grayscale-[20%] sepia-[15%]'
-        />
         <div className='absolute inset-0 bg-gradient-to-b from-[#12100C]/50 via-[#12100C]/80 to-[#12100C]/95' />
 
-        <div className='relative mx-auto max-w-4xl px-6 py-28 text-center md:py-36'>
-          <p className='text-[#E8B454] text-center py-2'>Conclusion</p>
+        <div className='relative mx-auto max-w-full px-10 py-28 md:py-20'>
+          <p className='text-[#E8B454] text-left py-2'>Conclusion</p>
 
-          <p className='font-serif text-2xl italic leading-snug text-[#F6F1E7] md:text-2xl'>
+          <p className='font-serif text-2xl leading-snug text-[#F6F1E7] md:text-2xl'>
             Sound healing is a transformative practice that can improve your
             physical health, emotional well-being, and spiritual growth. Sattva
             Holistics in Coimbatore, you can explore the powerful benefits of
@@ -517,7 +472,7 @@ export default function SoundHealing () {
             relief to enhanced creativity and emotional healing, sound healing
             offers a natural, holistic approach to well-being.
           </p>
-          <p className='font-serif text-2xl italic leading-snug text-[#F6F1E7] md:text-2xl'>
+          <p className='font-serif text-2xl leading-snug text-[#F6F1E7] md:text-2xl'>
             By incorporating sound healing into your life, you can experience a
             profound shift in your health, happiness, and overall sense of
             harmony. Discover the power of sound at Sattva Holistics and unlock

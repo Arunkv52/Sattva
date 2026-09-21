@@ -54,7 +54,7 @@ const Eyebrow: React.FC<{ children: React.ReactNode; dark?: boolean }> = ({
   <div className='mb-5 flex items-center gap-0'>
     <span className=' bg-[#E8B454]' />
     <p
-      className={`text-[11px] font-medium uppercase tracking-[0.32em] ${
+      className={`text-base font-medium uppercase  ${
         dark ? 'text-[#E8B454]' : 'text-[#8A6B2E]'
       }`}
     >
@@ -128,7 +128,7 @@ export default function CrystalTherapy () {
       {/* ————————————————————— HERO ————————————————————— */}
       <section className='relative overflow-hidden'>
         <div
-          className={`${sectionContainer} grid gap-14 pb-20 pt-16 md:grid-cols-[1.05fr_0.95fr] md:items-center md:pb-28 md:pt-24`}
+          className={`${sectionContainer} grid gap-14 pb-20 pt-16 md:grid-cols-1 md:items-center md:pb-28 md:pt-24`}
         >
           <div className='relative rise'>
             <div className='pointer-events-none absolute -left-16 -top-40 opacity-70 md:-left-20'>
@@ -137,23 +137,21 @@ export default function CrystalTherapy () {
 
             <Eyebrow>Crystal Therapy · Coimbatore</Eyebrow>
 
-            <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-[3.75rem]'>
-              Harness the Healing Power of Crystals for
-              <span className='block italic text-[#B8863E]'>
-                Balance and Wellness
+            <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-5xl'>
+              Harness the Healing Power of Crystals for <span className='block italic text-[#B8863E]'> Balance and Wellness
               </span>
             </h1>
 
             
 
-            <p className='mt-8 max-w-xl text-[17px] leading-relaxed text-[#3A3325]'>
+            <p className='mt-8  text-base leading-relaxed text-[#3A3325]'>
               At Satva Holistics, our Crystal Therapy Course is designed to help
               you explore the powerful energy of crystals and their ability to
               support emotional, mental, physical, and spiritual well-being.
               Crystals have been used for centuries as tools for healing,
               protection, and energy balancing.
             </p>
-            <p className='mt-8 max-w-xl text-[17px] leading-relaxed text-[#3A3325]'>
+            <p className='mt-8  text-base leading-relaxed text-[#3A3325]'>
               This comprehensive training teaches you how different crystals
               work with the body's energy centers, helping to remove blockages,
               restore harmony, and promote inner peace. Whether you are
@@ -169,11 +167,7 @@ export default function CrystalTherapy () {
             </div>
           </div>
 
-          <img
-            src={AngelImg}
-            alt='Candlelit healing space at Sattva Holistics'
-            className='rise'
-          />
+          
         </div>
       </section>
 
@@ -190,7 +184,6 @@ export default function CrystalTherapy () {
 
           <div className='md:order-1'>
             <Eyebrow dark>What is Crystal Therapy?</Eyebrow>
-            <SectionTitle light>A gentle path to your higher self</SectionTitle>
 
             <p className='mt-6 text-[16px] leading-relaxed text-[#D8CFBB]'>
               Crystal Therapy is a holistic healing practice that uses natural
@@ -217,16 +210,10 @@ export default function CrystalTherapy () {
               the body's energy centers, often called chakras, to help restore
               balance and remove energetic blockages.
             </p>
-
-            <img
-              src={HealImg}
-              alt='Soft light during a healing session'
-              className='mt-10'
-            />
           </div>
 
-          <div className='space-y-10'>
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+          <div className='space-y-5'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 01
               </span>
@@ -237,7 +224,7 @@ export default function CrystalTherapy () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 02
               </span>
@@ -248,7 +235,7 @@ export default function CrystalTherapy () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 03
               </span>
@@ -259,7 +246,7 @@ export default function CrystalTherapy () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 04
               </span>
@@ -271,7 +258,7 @@ export default function CrystalTherapy () {
             </div>
             
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 05
               </span>
@@ -281,7 +268,7 @@ export default function CrystalTherapy () {
                 </h3>
               </div>
             </div>
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 06
               </span>
@@ -518,18 +505,14 @@ export default function CrystalTherapy () {
       </section> */}
 
       {/* ————————————————————— CLOSING ————————————————————— */}
-      <section className='relative overflow-hidden'>
-        <img
-          src={ConclutionImg}
-          alt='Golden hour light, closing the page'
-          className='absolute inset-0 h-full w-full object-cover grayscale-[20%] sepia-[15%]'
-        />
+      <section className='relative overflow-hidden bg-[#f5f4f0]'>
+       
         <div className='absolute inset-0 bg-gradient-to-b from-[#12100C]/50 via-[#12100C]/80 to-[#12100C]/95' />
 
-        <div className='relative mx-auto max-w-4xl px-6 py-28 text-center md:py-36'>
-          <p className='text-[#E8B454] text-center py-2'>Conclusion</p>
+        <div className='relative mx-auto max-w-6xl px-10 py-28 md:py-20'>
+          <p className='text-[#E8B454] py-2'>Conclusion</p>
 
-          <p className='font-serif text-2xl italic leading-snug text-[#F6F1E7] md:text-2xl'>
+          <p className='font-serif text-2xl leading-snug text-[#F6F1E7] md:text-2xl'>
             Crystal Therapy is a powerful energy healing practice that utilizes the natural vibrations of crystals and gemstones to restore balance, harmony, and well-being. For centuries, crystals have been valued for their ability to enhance positive energy, clear negativity, and support emotional and spiritual growth.
           </p>
           

@@ -52,7 +52,7 @@ const Eyebrow: React.FC<{ children: React.ReactNode; dark?: boolean }> = ({
   <div className='mb-5 flex items-center gap-0'>
     <span className=' bg-[#E8B454]' />
     <p
-      className={`text-[11px] font-medium uppercase tracking-[0.32em] ${
+      className={`text-base font-medium uppercase ${
         dark ? 'text-[#E8B454]' : 'text-[#8A6B2E]'
       }`}
     >
@@ -126,7 +126,7 @@ export default function ShamanicHealing () {
       {/* ————————————————————— HERO ————————————————————— */}
       <section className='relative overflow-hidden'>
         <div
-          className={`${sectionContainer} grid gap-14 pb-20 pt-16 md:grid-cols-[1.05fr_0.95fr] md:items-center md:pb-28 md:pt-24`}
+          className={`${sectionContainer} grid gap-14 pb-20 pt-16 md:grid-cols-1 md:items-center md:pb-28 md:pt-24`}
         >
           <div className='relative rise'>
             <div className='pointer-events-none absolute -left-16 -top-40 opacity-70 md:-left-20'>
@@ -135,14 +135,14 @@ export default function ShamanicHealing () {
 
             <Eyebrow>Shamanic Healing · Coimbatore</Eyebrow>
 
-            <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-[3.75rem]'>
+            <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-5xl'>
               Ancient Wisdom for Modern
               <span className='block italic text-[#B8863E]'>
                 Transformation
               </span>
             </h1>
 
-            <p className='mt-8 max-w-xl text-[17px] leading-relaxed text-[#3A3325]'>
+            <p className='mt-8 max-w-full text-[17px] leading-relaxed text-[#3A3325]'>
               Shamanic Healing is an ancient spiritual practice that works with
               energy, nature, and higher consciousness to restore balance and
               harmony. This course introduces traditional healing methods that
@@ -157,11 +157,7 @@ export default function ShamanicHealing () {
             </div>
           </div>
 
-          <img
-            src={AngelImg}
-            alt='Candlelit healing space at Sattva Holistics'
-            className='rise'
-          />
+         
         </div>
       </section>
 
@@ -178,14 +174,14 @@ export default function ShamanicHealing () {
 
           <div className='md:order-1'>
             <Eyebrow dark>What is Shamanic Healing?</Eyebrow>
-            <p className='mt-6 text-[16px] leading-relaxed text-[#D8CFBB]'>
+            <p className='mt-6 text-base leading-relaxed text-[#D8CFBB]'>
               Shamanic Healing is an ancient spiritual healing practice that
               focuses on restoring balance and harmony within a person's mind,
               body, emotions, and spirit. Rooted in traditional wisdom from
               indigenous cultures around the world, Shamanic Healing works with
               energy, nature, spiritual awareness, and personal transformation.
             </p>
-            <p className='mt-6 text-[16px] leading-relaxed text-[#D8CFBB]'>
+            <p className='mt-6 text-base leading-relaxed text-[#D8CFBB]'>
               This healing approach is based on the belief that emotional
               stress, negative experiences, and energetic imbalances can affect
               overall well-being. Through various healing techniques, Shamanic
@@ -202,21 +198,16 @@ export default function ShamanicHealing () {
           <div>
             <Eyebrow>The Process</Eyebrow>
             <SectionTitle>How Does Shamanic Healing Work?</SectionTitle>
-            <p className='mt-6 text-[15px] leading-relaxed text-[#4A4331]'>
+            <p className='mt-6 text-base leading-relaxed text-[#4A4331]'>
               Shamanic Healing works by addressing energetic imbalances and
               helping individuals release negative patterns that may be
               affecting their lives.
             </p>
 
-            <img
-              src={HealImg}
-              alt='Soft light during a healing session'
-              className='mt-10'
-            />
           </div>
 
-          <div className='space-y-10'>
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+          <div className='space-y-5'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 01
               </span>
@@ -227,7 +218,7 @@ export default function ShamanicHealing () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 02
               </span>
@@ -238,7 +229,7 @@ export default function ShamanicHealing () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 03
               </span>
@@ -249,7 +240,7 @@ export default function ShamanicHealing () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 04
               </span>
@@ -260,7 +251,7 @@ export default function ShamanicHealing () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 05
               </span>
@@ -498,24 +489,19 @@ export default function ShamanicHealing () {
 
       {/* ————————————————————— CLOSING ————————————————————— */}
       <section className='relative overflow-hidden'>
-        <img
-          src={ConclutionImg}
-          alt='Golden hour light, closing the page'
-          className='absolute inset-0 h-full w-full object-cover grayscale-[20%] sepia-[15%]'
-        />
         <div className='absolute inset-0 bg-gradient-to-b from-[#12100C]/50 via-[#12100C]/80 to-[#12100C]/95' />
 
-        <div className='relative mx-auto max-w-4xl px-6 py-28 text-center md:py-36'>
-          <p className='text-[#E8B454] text-center py-2'>Conclusion</p>
+        <div className='relative mx-auto max-w-full px-10 py-28 md:py-20'>
+          <p className='text-[#E8B454] text-left py-2'>Conclusion</p>
 
-          <p className='font-serif text-2xl italic leading-snug text-[#F6F1E7] md:text-2xl'>
+          <p className='font-serif text-2xl leading-snug text-[#F6F1E7] md:text-2xl'>
             Shamanic Healing is a powerful holistic practice that helps restore
             balance, release emotional and energetic blockages, and support
             personal transformation. By working with healing energy, spiritual
             awareness, and self-discovery, it empowers individuals to achieve
             greater harmony in all aspects of life.
           </p>
-          <p className='font-serif text-2xl italic leading-snug text-[#F6F1E7] md:text-2xl'>
+          <p className='font-serif text-2xl leading-snug text-[#F6F1E7] md:text-2xl'>
             Whether you are seeking emotional healing, spiritual growth, inner
             peace, or a deeper connection with yourself, Shamanic Healing offers
             a meaningful path toward wellness, empowerment, and transformation.

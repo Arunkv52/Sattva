@@ -5,9 +5,6 @@ import HealImg from '../../assets/classes/Angel-healing/healing-work.jpg'
 import BenefitsImg from '../../assets/classes/Angel-healing/benefits.jpg'
 import FaqImg from '../../assets/classes/Angel-healing/faq.jpg'
 
-
-
-
 type RingMarkProps = {
   size?: number
   className?: string
@@ -57,7 +54,7 @@ const Eyebrow: React.FC<{ children: React.ReactNode; dark?: boolean }> = ({
   <div className='mb-5 flex items-center gap-0'>
     <span className=' bg-[#E8B454]' />
     <p
-      className={`text-[11px] font-medium uppercase tracking-[0.32em] ${
+      className={`text-base font-medium uppercase  ${
         dark ? 'text-[#E8B454]' : 'text-[#8A6B2E]'
       }`}
     >
@@ -83,7 +80,6 @@ const SectionTitle: React.FC<{
 /* Every photograph on the page runs through this frame so the imagery reads
    as one considered set rather than stock photos dropped in ad hoc: a soft
    sepia/grayscale grade, a slim gold hairline, and a bottom-up shadow. */
-
 
 const pageBg = 'bg-[#F6F1E7] text-[#17140F]'
 const inkBg = 'bg-[#1c939e]'
@@ -132,7 +128,7 @@ export default function AngelHealing () {
       {/* ————————————————————— HERO ————————————————————— */}
       <section className='relative overflow-hidden'>
         <div
-          className={`${sectionContainer} grid gap-14 pb-20 pt-16 md:grid-cols-[1.05fr_0.95fr] md:items-center md:pb-28 md:pt-24`}
+          className={`${sectionContainer} grid gap-14 pb-20 pt-16 md:grid-cols-1 md:items-center md:pb-28 md:pt-24`}
         >
           <div className='relative rise'>
             <div className='pointer-events-none absolute -left-16 -top-40 opacity-70 md:-left-20'>
@@ -141,16 +137,16 @@ export default function AngelHealing () {
 
             <Eyebrow>Angel Healing Services · Coimbatore</Eyebrow>
 
-            <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-[3.75rem]'>
-              Healing with
+            <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-5xl'>
+              Healing with{' '}
               <span className='block italic text-[#B8863E]'>Angels</span>
             </h1>
 
-            <p className='mt-3 max-w-md text-[13px] uppercase tracking-[0.24em] text-[#8A6B2E]'>
+            <p className='mt-3 max-w-full text-[13px] uppercase tracking-[0.24em] text-[#8A6B2E]'>
               Connecting to divine energy for emotional and spiritual wellness
             </p>
 
-            <p className='mt-8 max-w-xl text-[17px] leading-relaxed text-[#3A3325]'>
+            <p className='mt-8 max-w-full text-[17px] leading-relaxed text-[#3A3325]'>
               At Sattva Holistics, we offer the finest Angel Healing services in
               Coimbatore, helping you connect with divine energy for emotional
               and spiritual wellness. Whether you're seeking to release past
@@ -164,13 +160,6 @@ export default function AngelHealing () {
               </a>
             </div>
           </div>
-
-          <img
-            src={AngelImg}
-            alt='Candlelit healing space at Sattva Holistics'
-            
-            className='rise'
-          />
         </div>
       </section>
 
@@ -182,13 +171,11 @@ export default function AngelHealing () {
           <img
             src={AngelImg1}
             alt='Practitioner channeling healing energy'
-            
             className='md:order-2'
           />
 
           <div className='md:order-1'>
             <Eyebrow dark>What Is Angel Healing?</Eyebrow>
-            <SectionTitle light>A gentle path to your higher self</SectionTitle>
 
             <p className='mt-6 text-[16px] leading-relaxed text-[#D8CFBB]'>
               Angel Healing connects you to the energies of angels — divine
@@ -219,16 +206,10 @@ export default function AngelHealing () {
               your energy with the divine. Here's how a session typically
               unfolds.
             </p>
-
-            <img
-              src={HealImg}
-              alt='Soft light during a healing session'
-              className='mt-10'
-            />
           </div>
 
-          <div className='space-y-10'>
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+          <div className='space-y-5'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 01
               </span>
@@ -243,7 +224,7 @@ export default function AngelHealing () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 02
               </span>
@@ -258,7 +239,7 @@ export default function AngelHealing () {
               </div>
             </div>
 
-            <div className='flex gap-6 border-b border-[#17140F]/10 pb-10'>
+            <div className='flex gap-6 border-b border-[#17140F]/10 pb-3'>
               <span className='font-serif text-3xl italic text-[#B8863E]'>
                 03
               </span>
@@ -301,7 +282,7 @@ export default function AngelHealing () {
               <SectionTitle light>
                 What Are the Benefits of Angel Healing?
               </SectionTitle>
-              <p className='mt-6 max-w-md text-[15px] leading-relaxed text-[#B9AE93]'>
+              <p className='mt-6 max-w-md text-[15px] leading-relaxed text-[#ebe6d9]'>
                 Angel Healing improves your overall well-being and helps you
                 navigate life's challenges with more clarity and confidence.
               </p>
@@ -309,7 +290,6 @@ export default function AngelHealing () {
               <img
                 src={BenefitsImg}
                 alt='A calm space for reflection'
-                
                 className='mt-10'
               />
             </div>
@@ -319,7 +299,7 @@ export default function AngelHealing () {
                 <h3 className='font-serif text-lg text-[#F6F1E7]'>
                   Emotional Healing
                 </h3>
-                <p className='mt-1 text-[15px] leading-relaxed text-[#B9AE93]'>
+                <p className='mt-1 text-[15px] leading-relaxed text-[#ebe6d9]'>
                   Release negative emotions, trauma, and grief to create space
                   for peace.
                 </p>
@@ -328,7 +308,7 @@ export default function AngelHealing () {
                 <h3 className='font-serif text-lg text-[#F6F1E7]'>
                   Clarity and Insight
                 </h3>
-                <p className='mt-1 text-[15px] leading-relaxed text-[#B9AE93]'>
+                <p className='mt-1 text-[15px] leading-relaxed text-[#ebe6d9]'>
                   Receive divine guidance that helps you make better decisions
                   and understand your purpose.
                 </p>
@@ -337,7 +317,7 @@ export default function AngelHealing () {
                 <h3 className='font-serif text-lg text-[#F6F1E7]'>
                   Stress Relief
                 </h3>
-                <p className='mt-1 text-[15px] leading-relaxed text-[#B9AE93]'>
+                <p className='mt-1 text-[15px] leading-relaxed text-[#ebe6d9]'>
                   Feel deeply relaxed as angelic energy eases anxiety and mental
                   tension.
                 </p>
@@ -346,7 +326,7 @@ export default function AngelHealing () {
                 <h3 className='font-serif text-lg text-[#F6F1E7]'>
                   Physical Healing
                 </h3>
-                <p className='mt-1 text-[15px] leading-relaxed text-[#B9AE93]'>
+                <p className='mt-1 text-[15px] leading-relaxed text-[#ebe6d9]'>
                   Relieved stress and improved energy flow support physical
                   well-being.
                 </p>
@@ -355,7 +335,7 @@ export default function AngelHealing () {
                 <h3 className='font-serif text-lg text-[#F6F1E7]'>
                   Spiritual Connection
                 </h3>
-                <p className='mt-1 text-[15px] leading-relaxed text-[#B9AE93]'>
+                <p className='mt-1 text-[15px] leading-relaxed text-[#ebe6d9]'>
                   Strengthen your bond with your higher self and your spiritual
                   guides.
                 </p>
@@ -367,7 +347,7 @@ export default function AngelHealing () {
 
       {/* ————————————————————— WHY CHOOSE US ————————————————————— */}
       <section className={`${sectionContainer} ${sectionSpace}`}>
-        <div className='mb-14 max-w-2xl'>
+        <div className='mb-14 max-w-full'>
           <Eyebrow>Why Sattva Holistics</Eyebrow>
           <SectionTitle>
             Why Choose Sattva Holistics for Angel Healing Services in
@@ -443,7 +423,6 @@ export default function AngelHealing () {
             <img
               src={FaqImg}
               alt='A quiet corner for reflection before a session'
-            
               className='mt-10'
             />
           </div>
@@ -518,24 +497,19 @@ export default function AngelHealing () {
 
       {/* ————————————————————— CLOSING ————————————————————— */}
       <section className='relative overflow-hidden'>
-        <img
-          src={ConclutionImg}
-          alt='Golden hour light, closing the page'
-          className='absolute inset-0 h-full w-full object-cover grayscale-[20%] sepia-[15%]'
-        />
         <div className='absolute inset-0 bg-gradient-to-b from-[#12100C]/50 via-[#12100C]/80 to-[#12100C]/95' />
 
-        <div className='relative mx-auto max-w-4xl px-6 py-28 text-center md:py-36'>
-          <p className='text-[#E8B454] text-center py-2'>Conclusion</p>
+        <div className='relative mx-auto max-w-6xl px-10 py-28 md:py-20'>
+          <p className='text-[#E8B454] text-left py-2'>Conclusion</p>
 
-          <p className='font-serif text-2xl italic leading-snug text-[#F6F1E7] md:text-2xl'>
-            At Sattva Holistics, we are passionate about guiding you on your healing
-            journey through Top Angel Card Healing Services in Coimbatore and
-            Angel Therapy Services. Whether you're seeking emotional release,
-            spiritual clarity, or physical healing, Angel Healing provides a
-            holistic and transformative experience.
+          <p className='font-serif text-2xl leading-snug text-[#F6F1E7] md:text-2xl'>
+            At Sattva Holistics, we are passionate about guiding you on your
+            healing journey through Top Angel Card Healing Services in
+            Coimbatore and Angel Therapy Services. Whether you're seeking
+            emotional release, spiritual clarity, or physical healing, Angel
+            Healing provides a holistic and transformative experience.
           </p>
-          <p className='font-serif text-2xl italic leading-snug text-[#F6F1E7] md:text-2xl'>
+          <p className='font-serif text-2xl leading-snug text-[#F6F1E7] md:text-2xl'>
             Our practitioners are here to help you connect with your divine
             energy, guiding you toward peace, balance, and spiritual growth.
             Contact us today to book your personalized Angel Healing session and
