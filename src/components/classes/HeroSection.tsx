@@ -7,10 +7,32 @@ import {
   // SheetTitle
 } from '@/components/ui/sheet'
 
-import EnergyBalance from '../../assets/classes/Energy-balancing.jpg'
-import ReikiHeal from '../../assets/classes/reiki-heal.jpg'
-import AngelsHealImg from '../../assets/classes/Angel-healing/hero-img.jpg'
-import SoundHealingImg from '../../assets/classes/sound-healing/1.jpg'
+
+
+
+// New images add
+import usuireikiimg from '../../assets/new-classes/usui-reiki/image-1.jpg'
+import crystalimg from '../../assets/new-classes/crystal/image-1.jpg'
+import moneyreikiimg from '../../assets/new-classes/money-reiki/image-1.jpg'
+import sacredimg from '../../assets/new-classes/sacred-money/image-1.jpg'
+import bachimg from '../../assets/new-classes/bach-flower/image-1.jpg'
+import sigilimg from '../../assets/new-classes/sigil-course/image-1.jpg'
+import switchimg from '../../assets/new-classes/switchword-course/image-1.jpg'
+import angelimg from '../../assets/new-classes/angel-therapy/image-1.jpg'
+import quiyinimg from '../../assets/new-classes/quinyin-healing/image-1.jpg'
+import shamanicimg from '../../assets/new-classes/shamanic-healing/image-1.jpg'
+import soundhealingimg from '../../assets/new-classes/sound-healing/sound-healing-1.jpg'
+import lamaferaimg from '../../assets/new-classes/ancient-therapy/image-1.jpg'
+
+
+
+
+
+
+
+
+
+
 
 import  ReikiHealing  from './ReikiHealing'
 import AngelHealing from './AngelHealing'
@@ -45,7 +67,7 @@ const classes: Course[] = [
     level: 'Certified Course',
     duration: '',
     desc: 'Learn the traditional Japanese healing technique that channels universal life energy for self-healing, emotional balance, and spiritual growth.',
-    image: ReikiHeal,
+    image: usuireikiimg,
     component: ReikiHealing 
 
   },
@@ -56,7 +78,7 @@ const classes: Course[] = [
     level: 'Healing Course',
     duration: '',
     desc: 'Join our Crystal Therapy Course and discover how crystal energy can transform your life while empowering you to help others on their healing journey.',
-    image: AngelsHealImg,
+    image: crystalimg,
     component: CrystalTherapy
   },
 
@@ -66,7 +88,7 @@ const classes: Course[] = [
     level: 'Prosperity Healing',
     duration: '',
     desc: 'Our Money Reiki Course empowers you to develop a healthier relationship with money while creating a foundation for long-term abundance and success.',
-    image: EnergyBalance,
+    image: moneyreikiimg,
     component: MoneyReiki
 
   },
@@ -77,7 +99,7 @@ const classes: Course[] = [
     level: 'Advanced Healing',
     duration: '',
     desc: 'A specialized healing system that aligns your energy with abundance, success, and financial growth.',
-    image: EnergyBalance,
+    image: sacredimg,
     component: SacredGreen
   },
 
@@ -87,7 +109,7 @@ const classes: Course[] = [
     level: 'Natural Healing',
     duration: '',
     desc: 'Learn how flower remedies help restore emotional balance, reduce stress, and support overall mental wellbeing.',
-    image: EnergyBalance,
+    image: bachimg,
     component: Bachflower
   },
 
@@ -97,7 +119,7 @@ const classes: Course[] = [
     level: 'Manifestation Practice',
     duration: '',
     desc: 'Transform your intentions into powerful symbols, unlock your inner potential, and create a life guided by purpose, clarity, and possibility',
-    image: EnergyBalance,
+    image: sigilimg,
     component: SigilCourse
   },
 
@@ -107,7 +129,7 @@ const classes: Course[] = [
     level: 'Mind Power',
     duration: '',
     desc: 'Unlock the power of words, transform your mindset, and create a life filled with confidence, positivity, and limitless possibilities.',
-    image: EnergyBalance,
+    image: switchimg,
     component: SwitchwordCourse
   },
 
@@ -117,7 +139,7 @@ const classes: Course[] = [
     level: 'Spiritual Healing',
     duration: '',
     desc: 'Connect with angelic guidance through healing techniques that promote peace, protection, and spiritual awareness.',
-    image: AngelsHealImg,
+    image: angelimg,
     component: AngelHealing
   },
 
@@ -127,7 +149,7 @@ const classes: Course[] = [
     level: 'Energy Healing',
     duration: '',
     desc: 'Experience the transformative power of Lama Fera, release energetic blockages, and awaken a deeper sense of peace, positivity, and spiritual connection.',
-    image: EnergyBalance,
+    image: lamaferaimg,
     component: LamaFera
   },
 
@@ -137,7 +159,7 @@ const classes: Course[] = [
     level: 'Divine Healing',
     duration: '',
     desc: 'Open your heart to the energy of compassion, embrace forgiveness, and experience the healing power of love, peace, and spiritual awakening.',
-    image: EnergyBalance,
+    image: quiyinimg,
     component: QuanyinHealing
   },
 
@@ -147,7 +169,7 @@ const classes: Course[] = [
     level: 'Ancient Wisdom',
     duration: '',
     desc: 'Reconnect with your inner wisdom, embrace positive change, and experience a journey of healing, balance, and spiritual awakening through Shamanic Healing.',
-    image: EnergyBalance,
+    image: shamanicimg,
     component : ShamanicHealing
   },
 
@@ -157,7 +179,7 @@ const classes: Course[] = [
     level: 'Vibrational Therapy',
     duration: '',
     desc: 'Experience healing through soothing sound frequencies that calm the mind, relax the body, and balance your energy.',
-    image: SoundHealingImg,
+    image: soundhealingimg,
     component: SoundHealing
   }
 ]
@@ -203,7 +225,7 @@ export default function Herosection () {
 
             {/* RIGHT */}
 
-            <div className='grid md:grid-cols-2 gap-4'>
+            <div className='grid md:grid-cols-2 gap-10'>
               {classes.map(item => (
                 <div
                   key={item.id}

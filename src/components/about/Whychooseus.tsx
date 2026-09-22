@@ -29,9 +29,9 @@ const Whychooseus = () => {
               </p>
             </div>
 
-            <div className='flex justify-center lg:justify-end'>
+            <div className='flex md:justify-center justify-start lg:justify-end'>
               <Link to={'/classes'}>
-                <button className='cursor-pointer mt-10 lg:mt-28 cursor-pointer border border-white/60 text-white px-10 py-4 rounded-full backdrop-blur-md hover:bg-white hover:text-black transition-all duration-500'>
+                <button className='cursor-pointer mt-10 lg:mt-28 border border-white/60 text-white px-10 py-4 rounded-full backdrop-blur-md hover:bg-white hover:text-black transition-all duration-500'>
                   Join Our Classes
                 </button>
               </Link>

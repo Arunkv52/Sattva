@@ -1,4 +1,3 @@
-import AngelImg1 from '../../assets/classes/Angel-healing/wings-fly.jpg'
 
 type RingMarkProps = {
   size?: number
@@ -49,7 +48,7 @@ const Eyebrow: React.FC<{ children: React.ReactNode; dark?: boolean }> = ({
   <div className='mb-5 flex items-center gap-0'>
     <span className=' bg-[#E8B454]' />
     <p
-      className={`text-base font-medium uppercase ${
+      className={`text-2xl font-medium uppercase ${
         dark ? 'text-[#E8B454]' : 'text-[#8A6B2E]'
       }`}
     >
@@ -129,7 +128,6 @@ export default function ShamanicHealing () {
               <RingMark size={200} animate />
             </div>
 
-            <Eyebrow>Shamanic Healing · Coimbatore</Eyebrow>
 
             <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-5xl'>
               Ancient Wisdom for Modern
@@ -160,14 +158,9 @@ export default function ShamanicHealing () {
       {/* ————————————————— WHAT IS ANGEL HEALING ————————————————— */}
       <section className={emeraldBg}>
         <div
-          className={`${sectionContainer} ${sectionSpace} grid gap-14 md:grid-cols-2 md:items-center`}
+          className={`${sectionContainer} ${sectionSpace} grid gap-14 md:grid-cols-1 md:items-center`}
         >
-          <img
-            src={AngelImg1}
-            alt='Practitioner channeling healing energy'
-            className='md:order-2'
-          />
-
+          
           <div className='md:order-1'>
             <Eyebrow dark>What is Shamanic Healing?</Eyebrow>
             <p className='mt-6 text-base leading-relaxed text-[#D8CFBB]'>
@@ -192,7 +185,7 @@ export default function ShamanicHealing () {
       <section id='learn' className={`${sectionContainer} ${sectionSpace}`}>
         <div className='grid gap-16 md:grid-cols-[0.85fr_1.15fr]'>
           <div>
-            <Eyebrow>The Process</Eyebrow>
+            <p className='py-2'>The Process</p>
             <SectionTitle>How Does Shamanic Healing Work?</SectionTitle>
             <p className='mt-6 text-base leading-relaxed text-[#4A4331]'>
               Shamanic Healing works by addressing energetic imbalances and

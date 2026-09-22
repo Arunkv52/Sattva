@@ -1,4 +1,3 @@
-import AngelImg1 from '../../assets/classes/Angel-healing/wings-fly.jpg'
 import BenefitsImg from '../../assets/classes/Angel-healing/benefits.jpg'
 import FaqImg from '../../assets/classes/Angel-healing/faq.jpg'
 
@@ -51,7 +50,7 @@ const Eyebrow: React.FC<{ children: React.ReactNode; dark?: boolean }> = ({
   <div className='mb-5 flex items-center gap-0'>
     <span className=' bg-[#E8B454]' />
     <p
-      className={`text-base font-medium uppercase  ${
+      className={`text-2xl font-medium uppercase  ${
         dark ? 'text-[#E8B454]' : 'text-[#8A6B2E]'
       }`}
     >
@@ -132,7 +131,7 @@ export default function AngelHealing () {
               <RingMark size={200} animate />
             </div>
 
-            <Eyebrow>Angel Healing Services · Coimbatore</Eyebrow>
+            
 
             <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-5xl'>
               Healing with{' '}
@@ -163,13 +162,9 @@ export default function AngelHealing () {
       {/* ————————————————— WHAT IS ANGEL HEALING ————————————————— */}
       <section className={emeraldBg}>
         <div
-          className={`${sectionContainer} ${sectionSpace} grid gap-14 md:grid-cols-2 md:items-center`}
+          className={`${sectionContainer} ${sectionSpace} grid gap-14 md:grid-cols-1 md:items-center`}
         >
-          <img
-            src={AngelImg1}
-            alt='Practitioner channeling healing energy'
-            className='md:order-2'
-          />
+         
 
           <div className='md:order-1'>
             <Eyebrow dark>What Is Angel Healing?</Eyebrow>
@@ -194,7 +189,7 @@ export default function AngelHealing () {
       <section id='learn' className={`${sectionContainer} ${sectionSpace}`}>
         <div className='grid gap-16 md:grid-cols-[0.85fr_1.15fr]'>
           <div>
-            <Eyebrow>The Process</Eyebrow>
+            <p className='py-2'>The Process</p>
             <SectionTitle>How Angel Healing works?</SectionTitle>
             <p className='mt-6 text-[15px] leading-relaxed text-[#4A4331]'>
               Angel Healing works by tapping into the divine energy of angels.
@@ -275,7 +270,7 @@ export default function AngelHealing () {
         <div className={`${sectionContainer} ${sectionSpace}`}>
           <div className='grid gap-14 md:grid-cols-2 md:items-start'>
             <div>
-              <Eyebrow dark>Benefits</Eyebrow>
+              <p className='py-2 text-white'>Benefits</p>
               <SectionTitle light>
                 What Are the Benefits of Angel Healing?
               </SectionTitle>
@@ -345,7 +340,7 @@ export default function AngelHealing () {
       {/* ————————————————————— WHY CHOOSE US ————————————————————— */}
       <section className={`${sectionContainer} ${sectionSpace}`}>
         <div className='mb-14 max-w-full'>
-          <Eyebrow>Why Sattva Holistics</Eyebrow>
+          <p className='py-2'>Why Sattva Holistics</p>
           <SectionTitle>
             Why Choose Sattva Holistics for Angel Healing Services in
             Coimbatore?
@@ -414,7 +409,7 @@ export default function AngelHealing () {
           className={`${sectionContainer} ${sectionSpace} grid gap-14 md:grid-cols-[0.8fr_1.2fr]`}
         >
           <div>
-            <Eyebrow dark>Frequently Asked</Eyebrow>
+            <p className='py-2 text-white'>Frequently Asked</p>
             <SectionTitle light>Good to know before you begin</SectionTitle>
 
             <img

@@ -22,7 +22,7 @@ const About = () => {
         />
       </svg>
 
-      <div className='container mx-auto px-6 md:px-5 py-20 relative z-10'>
+      <div className='container mx-auto px-6 md:px-5 md:py-20 py-0 relative z-10'>
         <div className='grid lg:grid-cols-2 gap-16 items-start'>
           {/* Left Heading */}
           <div>

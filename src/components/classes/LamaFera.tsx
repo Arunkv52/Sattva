@@ -1,4 +1,3 @@
-import AngelImg1 from '../../assets/classes/Angel-healing/wings-fly.jpg'
 
 
 type RingMarkProps = {
@@ -50,7 +49,7 @@ const Eyebrow: React.FC<{ children: React.ReactNode; dark?: boolean }> = ({
   <div className='mb-5 flex items-center gap-0'>
     <span className=' bg-[#E8B454]' />
     <p
-      className={`text-base font-medium uppercase ${
+      className={`text-2xl font-medium uppercase ${
         dark ? 'text-[#E8B454]' : 'text-[#8A6B2E]'
       }`}
     >
@@ -130,8 +129,7 @@ export default function LamaFera () {
               <RingMark size={200} animate />
             </div>
 
-            <Eyebrow>Lama Fera · Coimbatore</Eyebrow>
-
+            
             <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-5xl'>
               Ancient Buddhist Healing
               <span className='block italic text-[#B8863E]'>Energy System</span>
@@ -156,13 +154,9 @@ export default function LamaFera () {
       {/* ————————————————— WHAT IS ANGEL HEALING ————————————————— */}
       <section className={emeraldBg}>
         <div
-          className={`${sectionContainer} ${sectionSpace} grid gap-14 md:grid-cols-2 md:items-center`}
+          className={`${sectionContainer} ${sectionSpace} grid gap-14 md:grid-cols-1 md:items-center`}
         >
-          <img
-            src={AngelImg1}
-            alt='Practitioner channeling healing energy'
-            className='md:order-2'
-          />
+       
 
           <div className='md:order-1'>
             <Eyebrow dark>What is Lama Fera?</Eyebrow>
@@ -188,7 +182,6 @@ export default function LamaFera () {
       <section id='learn' className={`${sectionContainer} ${sectionSpace}`}>
         <div className='grid gap-16 md:grid-cols-[0.85fr_1.15fr]'>
           <div>
-            <Eyebrow>The Process</Eyebrow>
             <SectionTitle>How Does Lama Fera Work?</SectionTitle>
             <p className='mt-6 text-[15px] leading-relaxed text-[#4A4331]'>
               Lama Fera works by channeling healing energy through specific

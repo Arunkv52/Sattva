@@ -1,6 +1,6 @@
 const SocialLinks = [{
     title: "Facebook",
-    link: '/'
+    link: '#'
 },
 {
     title: "Instagram",

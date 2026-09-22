@@ -47,13 +47,13 @@ const RingBullet: React.FC = () => (
   </span>
 )
 
-const SectionEyebrow: React.FC<{ children: React.ReactNode }> = ({
-  children
-}) => (
-  <p className='mb-4 text-[11px] font-medium uppercase tracking-[0.28em] text-[#E8B454]'>
-    {children}
-  </p>
-)
+// const SectionEyebrow: React.FC<{ children: React.ReactNode }> = ({
+//   children
+// }) => (
+//   <p className='mb-4 text-[11px] font-medium uppercase tracking-[0.28em] text-[#E8B454]'>
+//     {children}
+//   </p>
+// )
 
 const ListItem: React.FC<{ text: string; muted?: boolean }> = ({
   text,
@@ -168,8 +168,7 @@ export default function SattvaReiki () {
         </div>
 
         <div className='relative max-w-full rise'>
-          <SectionEyebrow>Traditional Japanese Energy Healing</SectionEyebrow>
-
+          
           <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-5xl'>
             Usui Reiki
             <span className='mt-2 block italic text-[#E8B454]'>
@@ -206,8 +205,8 @@ export default function SattvaReiki () {
         <div className={`${sectionContainer} ${sectionSpace}`}>
           <div className='grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:gap-16'>
             <div>
-              <SectionEyebrow>Course Overview</SectionEyebrow>
-              <SectionTitle>Practical training, held with care</SectionTitle>
+              <p className='py-2 text-white'>Course Overview</p>
+              <SectionTitle className='text-white'>Practical training, held with care</SectionTitle>
             </div>
 
             <p className='text-base leading-relaxed text-white md:text-base'>
@@ -227,7 +226,7 @@ export default function SattvaReiki () {
       >
         <div className='mb-14 flex items-end justify-between gap-6'>
           <div>
-            <SectionEyebrow>Curriculum</SectionEyebrow>
+            <p className='py-2'>Curriculum</p>
             <SectionTitle>What you'll learn</SectionTitle>
           </div>
 
@@ -243,7 +242,7 @@ export default function SattvaReiki () {
 
       <section className={`${borderSoft} bg-[#1C939E]`}>
         <div className={`${sectionContainer} ${sectionSpace}`}>
-          <SectionEyebrow>Benefits of Usui Reiki</SectionEyebrow>
+          <p className='py-2'>Benefits of Usui Reiki</p>
           <SectionTitle className='mb-14'>
             What practice makes room for
           </SectionTitle>
@@ -256,15 +255,15 @@ export default function SattvaReiki () {
         </div>
       </section>
 
-      <section className={`${sectionContainer} ${sectionSpace} bg-[#1c939e] `}>
-        <SectionEyebrow>Who Can Join?</SectionEyebrow>
+      <section className={`${sectionContainer} ${sectionSpace} bg-[#e9e9ea] `}>
+        <p className='py-2'>Who Can Join?</p>
         <SectionTitle className='mb-12'>
           This course is suitable for
         </SectionTitle>
 
         <div className='flex flex-wrap gap-3 '>
           {who.map(item => (
-            <span key={item} className={`${chipClass} text-white`}>
+            <span key={item} className={`${chipClass} text-black`}>
               {item}
             </span>
           ))}
@@ -273,8 +272,8 @@ export default function SattvaReiki () {
 
       <section className={`${borderSoft} bg-[#083326]`}>
         <div className={`${sectionContainer} ${sectionSpace}`}>
-          <SectionEyebrow>Why Learn With Sattva Holistics?</SectionEyebrow>
-          <SectionTitle className='mb-14'>
+          <p className='py-2 text-white'>Why Learn With Sattva Holistics?</p>
+          <SectionTitle className='mb-14 text-white'>
             Training built around the student
           </SectionTitle>
 
@@ -293,7 +292,7 @@ export default function SattvaReiki () {
 
       <section className='relative mx-auto max-w-full overflow-hidden px-6 py-24 md:px-10 md:py-32'>
         <div className='relative mx-auto max-w-full text-left'>
-          <SectionEyebrow>Conclusion</SectionEyebrow>
+          <p className='py-2'>Conclusion</p>
           <p className='font-serif text-2xl leading-snug text-black md:text-2xl'>
             By the end of this course, you'll have the knowledge and confidence
             to practice Reiki for yourself and others — creating greater

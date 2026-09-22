@@ -43,21 +43,21 @@ const RingMark: React.FC<RingMarkProps> = ({
 
 /* Small gold rule + label used ahead of every section title — the page's
    recurring "signature" mark, standing in for a wax seal / letterhead crest. */
-const Eyebrow: React.FC<{ children: React.ReactNode; dark?: boolean }> = ({
-  children,
-  dark = false
-}) => (
-  <div className='mb-5 flex items-center gap-0'>
-    <span className=' bg-[#E8B454]' />
-    <p
-      className={`text-[11px] font-medium uppercase tracking-[0.32em] ${
-        dark ? 'text-[#E8B454]' : 'text-[#8A6B2E]'
-      }`}
-    >
-      {children}
-    </p>
-  </div>
-)
+// const Eyebrow: React.FC<{ children: React.ReactNode; dark?: boolean }> = ({
+//   children,
+//   dark = false
+// }) => (
+//   <div className='mb-5 flex items-center gap-0'>
+//     <span className=' bg-[#E8B454]' />
+//     <p
+//       className={`text-base font-medium uppercase ${
+//         dark ? 'text-[#E8B454]' : 'text-[#8A6B2E]'
+//       }`}
+//     >
+//       {children}
+//     </p>
+//   </div>
+// )
 
 const SectionTitle: React.FC<{
   children: React.ReactNode
@@ -127,7 +127,6 @@ export default function SoundHealing () {
               <RingMark size={200} animate />
             </div>
 
-            <Eyebrow>Sound Healing · Coimbatore</Eyebrow>
 
             <h1 className='font-serif text-[2.6rem] leading-[1.08] tracking-tight md:text-4xl'>
               Top 10 Ways Sound Healing Can Transform Your Well-Being:
@@ -353,7 +352,7 @@ export default function SoundHealing () {
           className={`${sectionContainer} ${sectionSpace} grid gap-14 md:grid-cols-[0.8fr_1.2fr]`}
         >
           <div>
-            <Eyebrow dark>Frequently Asked</Eyebrow>
+            <p className='py-2 text-white'>Frequently Asked</p>
             <SectionTitle light>Good to know before you begin</SectionTitle>
 
             <img

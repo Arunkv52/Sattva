@@ -14,7 +14,7 @@ const spaces = [
     image: Space2,
   },
   {
-    title: "Yoga + Pilates Studios",
+    title: "Yoga + Theraphy Studios",
     image: Space3,
   },
 ];
@@ -41,7 +41,7 @@ const WelcomeSection = () => {
           className="
           relative
           overflow-hidden
-          aspect-[4/3]
+          aspect-4/3
           "
         >
           <img
@@ -110,7 +110,7 @@ const WelcomeSection = () => {
                   <span
                     className="
                     w-0
-                    h-[2px]
+                    h-0.5
                     bg-[#7b7f35]
                     group-hover:w-16
                     duration-500"
